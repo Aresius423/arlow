@@ -1,5 +1,17 @@
 {
   "title": "Arlow exercises",
   "all": "All",
-  "tech": "Techniques"
+  "tech": "Techniques",
+  "kozep_tavolsag": "közép távolság",
+  "szekond_gard": "szekond-gard",
+  "szekond_kotes": "szekond-kötés",
+  "note_ex_1": "Mindenkor a szekond-gardba sietünk, ha a visszavágás elmaradt, hacsak ismételten nem támadunk.",
+  "szuras":  "szúrás",
+  "felso_szuras": "felső szúrás",
+  "felso_kitero_szuras": "felső kitérő szúrás",
+  "fejvagas": "fejvágás",
+  "magas_terc_vedes": "magas terc védés",
+  "kvint_vedes": "kvint védés",
+  "also_szuras": "alsó szúrás",
+  "terc_gard": "terc gard"
 }

@@ -62,6 +62,126 @@ class S {
       args: [],
     );
   }
+
+  /// `közép távolság`
+  String get kozep_tavolsag {
+    return Intl.message(
+      'közép távolság',
+      name: 'kozep_tavolsag',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `szekond-gard`
+  String get szekond_gard {
+    return Intl.message(
+      'szekond-gard',
+      name: 'szekond_gard',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `szekond-kötés`
+  String get szekond_kotes {
+    return Intl.message(
+      'szekond-kötés',
+      name: 'szekond_kotes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mindenkor a szekond-gardba sietünk, ha a visszavágás elmaradt, hacsak ismételten nem támadunk.`
+  String get note_ex_1 {
+    return Intl.message(
+      'Mindenkor a szekond-gardba sietünk, ha a visszavágás elmaradt, hacsak ismételten nem támadunk.',
+      name: 'note_ex_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `szúrás`
+  String get szuras {
+    return Intl.message(
+      'szúrás',
+      name: 'szuras',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `felső szúrás`
+  String get felso_szuras {
+    return Intl.message(
+      'felső szúrás',
+      name: 'felso_szuras',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `felső kitérő szúrás`
+  String get felso_kitero_szuras {
+    return Intl.message(
+      'felső kitérő szúrás',
+      name: 'felso_kitero_szuras',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `fejvágás`
+  String get fejvagas {
+    return Intl.message(
+      'fejvágás',
+      name: 'fejvagas',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `magas terc védés`
+  String get magas_terc_vedes {
+    return Intl.message(
+      'magas terc védés',
+      name: 'magas_terc_vedes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `kvint védés`
+  String get kvint_vedes {
+    return Intl.message(
+      'kvint védés',
+      name: 'kvint_vedes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `alsó szúrás`
+  String get also_szuras {
+    return Intl.message(
+      'alsó szúrás',
+      name: 'also_szuras',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `terc gard`
+  String get terc_gard {
+    return Intl.message(
+      'terc gard',
+      name: 'terc_gard',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

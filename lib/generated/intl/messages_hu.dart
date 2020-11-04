@@ -21,8 +21,20 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
-    "all" : MessageLookupByLibrary.simpleMessage("Összes"),
-    "tech" : MessageLookupByLibrary.simpleMessage("Technikák"),
+    "all" : MessageLookupByLibrary.simpleMessage("összes"),
+    "also_szuras" : MessageLookupByLibrary.simpleMessage("alsó szúrás"),
+    "fejvagas" : MessageLookupByLibrary.simpleMessage("fejvágás"),
+    "felso_kitero_szuras" : MessageLookupByLibrary.simpleMessage("felső kitérő szúrás"),
+    "felso_szuras" : MessageLookupByLibrary.simpleMessage("felső szúrás"),
+    "kozep_tavolsag" : MessageLookupByLibrary.simpleMessage("közép távolság"),
+    "kvint_vedes" : MessageLookupByLibrary.simpleMessage("kvint védés"),
+    "magas_terc_vedes" : MessageLookupByLibrary.simpleMessage("magas terc védés"),
+    "note_ex_1" : MessageLookupByLibrary.simpleMessage("Mindenkor a szekond-gardba sietünk, ha a visszavágás elmaradt, hacsak ismételten nem támadunk."),
+    "szekond_gard" : MessageLookupByLibrary.simpleMessage("szekond-gard"),
+    "szekond_kotes" : MessageLookupByLibrary.simpleMessage("szekond-kötés"),
+    "szuras" : MessageLookupByLibrary.simpleMessage("szúrás"),
+    "tech" : MessageLookupByLibrary.simpleMessage("technikák"),
+    "terc_gard" : MessageLookupByLibrary.simpleMessage("terc gard"),
     "title" : MessageLookupByLibrary.simpleMessage("Arlow gyakorlatok")
   };
 }
