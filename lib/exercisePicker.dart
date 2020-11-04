@@ -25,7 +25,7 @@ List<Widget> makeChapters(BuildContext context, List<Chapter> data) {
         child: Center(
           child: Text(
             chapter.title,
-            style: Theme.of(context).textTheme.headline4
+            style: Theme.of(context).textTheme.headline6
           )
         ),
       ),
@@ -42,27 +42,30 @@ List<Widget> makeChapters(BuildContext context, List<Chapter> data) {
 }
 
 Widget makeExerciseButton(BuildContext context, Exercise exercise) {
-  return GestureDetector(
-    onTap: () {
-      Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => ExercisePage(exercise))
-      );
-    },
-    child: Container(
-      padding: EdgeInsets.all(8),
-      decoration: BoxDecoration(
-        border: Border.all(
-        color: Colours.accentColor,
+  return Padding(
+    padding: const EdgeInsets.all(8.0),
+    child: GestureDetector(
+      onTap: () {
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (context) => ExercisePage(exercise))
+        );
+      },
+      child: Container(
+        padding: EdgeInsets.all(8),
+        decoration: BoxDecoration(
+          border: Border.all(
+          color: Colours.accentColor,
+          ),
+            borderRadius: BorderRadius.all(Radius.circular(5))
         ),
-          borderRadius: BorderRadius.all(Radius.circular(5))
-      ),
-      child: Center(
-        child: Text(
-          exercise.title,
-          style: Theme.of(context).textTheme.headline5,
+        child: Center(
+          child: Text(
+            exercise.title,
+            style: Theme.of(context).textTheme.headline5,
+          )
         )
       )
-    )
+    ),
   );
 }
 

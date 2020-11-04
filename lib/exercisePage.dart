@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'generated/l10n.dart';
 import 'objects.dart';
 import 'styles.dart';
 
@@ -16,6 +17,19 @@ class ExercisePage extends StatelessWidget {
     }
     colItems = [
       ...colItems,
+      Row(
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(left: 8),
+            child: Text(S.current.master, style: Theme.of(context).textTheme.headline6),
+          ),
+          Expanded(child: Text("")),
+          Padding(
+            padding: const EdgeInsets.only(right: 8),
+            child: Text(S.current.student, style: Theme.of(context).textTheme.headline6),
+          ),
+        ],
+      ),
       ...exercise.flow.map(makeFlow).toList(),
     ];
     if(exercise.noteAfter.isNotEmpty) {
