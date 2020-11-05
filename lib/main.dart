@@ -1,20 +1,37 @@
+import 'package:arlow/languageSettings.dart';
 import 'package:arlow/menu.dart';
 import 'package:arlow/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_phoenix/flutter_phoenix.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'generated/l10n.dart';
 import 'package:intl/intl.dart';
 
+var locale = 'hu';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await S.load(Locale('hu', ''));
-  Intl.defaultLocale = 'hu';
-  runApp(MyApp());
+  LanguageSettings.sharedPreferences = await SharedPreferences.getInstance();
+  locale = LanguageSettings.getStoredLocale();
+
+  await S.load(Locale(locale, ''));
+  Intl.defaultLocale = locale;
+
+  runApp(
+      Phoenix(
+          child: MyApp()
+      )
+  );
 }
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class MyApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,10 +42,15 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatelessWidget {
+class MyHomePage extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    Intl.defaultLocale = 'hu';
+    Intl.defaultLocale = locale;
 
     return MaterialApp(
       title: S.current.title,
@@ -44,6 +66,7 @@ class MyHomePage extends StatelessWidget {
           elevation: 5,
           title: Text(S.current.title),
           actions: <Widget>[
+            LanguagePickerWidget(locale),
             PopupMenuButton<String>(
               onSelected: (String value) => handleMore(value, context),
               itemBuilder: (BuildContext context) {
