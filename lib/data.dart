@@ -125,7 +125,24 @@ final ex3b = Exercise(
 
 final Chapter egyszeruTamadasok = Chapter(
   title: S.current.egyszeru_tamadasok,
-  exercises: [ex4a, ex4b, ex4c, ex5a, ex5b, ex6a, ex6b, ex7a, ex7b, ex7ca, ex7cb, ex7d, ex7e, ex8a, ex8b, ex8c, ex8d, ex8e]
+  exercises: [
+    ex4a, ex4b, ex4c,
+    ex5a, ex5b,
+    ex6a, ex6b,
+    ex7a, ex7b, ex7ca, ex7cb, ex7d, ex7e,
+    ex8a, ex8b, ex8c, ex8d, ex8e,
+    ex9a, ex9b, ex9c, ex9da, ex9db,
+    ex10a, ex10b, ex10c, ex10d, ex10e, ex10f,
+    ex11a, ex11b, ex11c, ex11d,
+    ex12a, ex12b,
+    ex13a, ex13b, ex13c,
+    ex14a, ex14b,
+    ex15a, ex15b,
+    ex16a, ex16b,
+    ex17,
+    ex18a, ex18b,
+    ex19,
+  ]
 );
 
 final Exercise ex4a = Exercise(
@@ -527,8 +544,8 @@ final Exercise ex8e = Exercise(
     title: "8e",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
-      Master(S.current.terc_gard),
-      Student("terc-kötés előrelépéssel"),
+      Master(S.current.szekond_gard),
+      Student(S.current.szekond_kotes),
       Master("támad à tempo és talál"),
     ],
     keywords: [
@@ -537,5 +554,712 @@ final Exercise ex8e = Exercise(
       S.current.terc_kotes,
       S.current.kotes_elorelepessel,
       S.current.a_tempo,
+    ]
+);
+
+final Exercise ex9a = Exercise(
+    title: "9a",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Master(S.current.szekond_gard),
+      Student(S.current.szekond_kotes),
+      Student("előre lép kvint-invitóval"),
+      Master("a közeledésbe fejvágással akart támadni, tehát most hibásan belevág a kvint-védésbe"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.szekond_gard,
+      S.current.szekond_kotes,
+      S.current.kvint_invito,
+      S.current.kotes_elorelepessel,
+      S.current.fejvagas,
+      S.current.kvint_vedes,
+    ]
+);
+
+final Exercise ex9b = Exercise(
+    title: "9b",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Master(S.current.szekond_gard),
+      Student(S.current.szekond_kotes),
+      Student("előre lép kvint-invitóval"),
+      Master("támad oldalvágással"),
+      Student("véd szekonddal és visszavág"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.szekond_gard,
+      S.current.szekond_kotes,
+      S.current.kvint_invito,
+      S.current.kotes_elorelepessel,
+      S.current.oldalvagas,
+      S.current.szekond_vedes,
+    ]
+);
+
+final Exercise ex9c = Exercise(
+    title: "9c",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Master(S.current.szekond_gard),
+      Student(S.current.szekond_kotes),
+      Student("előre lép kvint-invitóval"),
+      Master("hátra lép szekondban"),
+      Student("támad ugrás-rohammal, tetszés szerinti vágás- vagy szúrással (à tempo úgy, hogy ellenfele másodszor már ne bírjon hátrálni)"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.szekond_gard,
+      S.current.szekond_kotes,
+      S.current.kvint_invito,
+      S.current.kotes_elorelepessel,
+      S.current.hatra_lepes,
+      S.current.roham,
+      S.current.ugras_roham,
+      S.current.szuras,
+      S.current.a_tempo,
+    ]
+);
+
+final Exercise ex9da = Exercise(
+    title: "9da",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Master(S.current.szekond_gard),
+      Student(S.current.szekond_kotes),
+      Student("előre lép kvint-invitóval"),
+      Master("hátra lép és követi a kvint-invitót kvinttel"),
+      Student("támad ugrás-rohammal"),
+      Master("véd és visszavág"),
+      Student("igyekszik védeni és visszavágni"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.szekond_gard,
+      S.current.szekond_kotes,
+      S.current.kvint_invito,
+      S.current.kotes_elorelepessel,
+      S.current.hatra_lepes,
+      S.current.roham,
+      S.current.ugras_roham,
+    ]
+);
+
+final Exercise ex9db = Exercise(
+    title: "9db",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Master(S.current.szekond_gard),
+      Student(S.current.szekond_kotes),
+      Student("előre lép kvint-invitóval"),
+      Master("hátra lép és követi a kvint-invitót kvinttel"),
+      Student("támad (ugrás-rohammal) à tempo (esetleg éppen fejvágással, mely ellen ellenfele állása által látszólag védve van)"),
+      Master("igyekszik védeni, ami azonban nem fog mindig sikerülni"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.szekond_gard,
+      S.current.szekond_kotes,
+      S.current.kvint_invito,
+      S.current.kotes_elorelepessel,
+      S.current.hatra_lepes,
+      S.current.roham,
+      S.current.ugras_roham,
+      S.current.a_tempo,
+      S.current.fejvagas,
+    ]
+);
+
+final Exercise ex10a = Exercise(
+    title: "10a",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Master(S.current.terc_gard),
+      Student(S.current.terc_kotes),
+      Student("előre lép kvart-invitóval"),
+      Master("a terc-kötéssel közeledésbe, kitérő szúrással akart támadni (vagy mellvágással), tehát a védésre talál"),
+      Student("visszavág"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.terc_gard,
+      S.current.terc_kotes,
+      S.current.kvart_invito,
+      S.current.kotes_elorelepessel,
+      S.current.szuras,
+      S.current.kitero_szuras,
+      S.current.mellvagas,
+    ]
+);
+
+final Exercise ex10b = Exercise(
+    title: "10b",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Master(S.current.terc_gard),
+      Student(S.current.terc_kotes),
+      Student("előre lép kvart-invitóval"),
+      Master("megáll"),
+      Student("támad az invitóból, esetleg à tempo"),
+      Master("véd vagy bekapja a támadást"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.terc_gard,
+      S.current.terc_kotes,
+      S.current.kvart_invito,
+      S.current.kotes_elorelepessel,
+      S.current.a_tempo,
+    ]
+);
+
+final Exercise ex10c = Exercise(
+    title: "10c",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Master(S.current.terc_gard),
+      Student(S.current.terc_kotes),
+      Student("előre lép kvart-invitóval"),
+      Master("hátra lép, esetleg követi az invitót"),
+      Student("támad az invitóból (ugrás-rohammal), esetleg à tempo és talál"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.terc_gard,
+      S.current.terc_kotes,
+      S.current.kvart_invito,
+      S.current.kotes_elorelepessel,
+      S.current.hatra_lepes,
+      S.current.roham,
+      S.current.ugras_roham,
+      S.current.a_tempo,
+    ]
+);
+
+final Exercise ex10d = Exercise(
+    title: "10d",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Master(S.current.terc_gard),
+      Student(S.current.terc_kotes),
+      Student("előre lép kvart-invitóval"),
+      Master("támad à tempo (mikor ellenfele az invitóba indul, vagyis az 1. ütembe) és talál"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.terc_gard,
+      S.current.terc_kotes,
+      S.current.kvart_invito,
+      S.current.kotes_elorelepessel,
+      S.current.a_tempo,
+    ]
+);
+
+final Exercise ex10e = Exercise(
+    title: "10e",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Master(S.current.terc_gard),
+      Student(S.current.terc_kotes),
+      Student("előre lép kvart-invitóval"),
+      Master("támad a kész invitóba (vagyis a 2. ütembe)"),
+      Student("véd és visszavág"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.terc_gard,
+      S.current.terc_kotes,
+      S.current.kvart_invito,
+      S.current.kotes_elorelepessel,
+    ]
+);
+
+final Exercise ex10f = Exercise(
+    title: "10f",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Master(S.current.terc_gard),
+      Student(S.current.terc_kotes),
+      Student("előre lép kvart-invitóval"),
+      Master("a mester hol à tempo támad, hol megáll, hol hátrál, hol meg készakarva késve támad"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.terc_gard,
+      S.current.terc_kotes,
+      S.current.kvart_invito,
+      S.current.kotes_elorelepessel,
+      S.current.a_tempo,
+      S.current.hatra_lepes,
+    ]
+);
+
+final Exercise ex11a = Exercise(
+    title: "11a",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Master(S.current.szekond_gard),
+      Student(S.current.szekond_gard),
+      Student("előre lép prim-kötéssel"),
+      Master("megáll"),
+      Student("támad valamit"),
+      Master("véd és visszavág"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.szekond_gard,
+      S.current.prim_kotes,
+      S.current.kotes_elorelepessel,
+    ]
+);
+
+final Exercise ex11b = Exercise(
+    title: "11b",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Master(S.current.szekond_gard),
+      Student(S.current.szekond_gard),
+      Student("előre lép prim-kötéssel"),
+      Student("támad à tempo és talál"),
+
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.szekond_gard,
+      S.current.prim_kotes,
+      S.current.kotes_elorelepessel,
+      S.current.a_tempo,
+    ]
+);
+
+final Exercise ex11c = Exercise(
+    title: "11c",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Master(S.current.szekond_gard),
+      Student(S.current.szekond_gard),
+      Student("előre lép prim-kötéssel"),
+      Master("hátra lép"),
+      Student("támad (ugrás-rohammal), esetleg à tempo"),
+      Master("igyekszik védeni és visszavágni"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.szekond_gard,
+      S.current.prim_kotes,
+      S.current.kotes_elorelepessel,
+      S.current.a_tempo,
+      S.current.roham,
+      S.current.ugras_roham,
+    ]
+);
+
+final Exercise ex11d = Exercise(
+    title: "11d",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Master(S.current.szekond_gard),
+      Student(S.current.szekond_gard),
+      Student("előre lép prim-kötéssel"),
+      Master("támad a kötésre vagy esetleg ezt megelőzve à tempo"),
+      Student("igyekszik védeni és visszavágni"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.szekond_gard,
+      S.current.prim_kotes,
+      S.current.kotes_elorelepessel,
+      S.current.a_tempo,
+    ]
+);
+
+final Exercise ex12a = Exercise(
+    title: "12a",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Student(S.current.szekond_gard),
+      Master(S.current.szekond_kotes),
+      Student("előre lép terc- és kvart-invitóval (a jobb és bal láb előrehozását egy-egy pillanattal megelőzve)"),
+      Master("támad egyenes szúrással (tehát éppen a kvart-védésbe talál"),
+      Student("visszavág")
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.szekond_gard,
+      S.current.szekond_kotes,
+      S.current.terc_invito,
+      S.current.kvart_invito,
+      S.current.kotes_elorelepessel,
+      S.current.szuras,
+      S.current.egyenes_szuras,
+      S.current.kvart_vedes,
+    ]
+);
+
+final Exercise ex12b = Exercise(
+    title: "12b",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Student(S.current.szekond_gard),
+      Master(S.current.szekond_kotes),
+      Student("előre lép terc- és kvart-invitóval (a jobb és bal láb előrehozását egy-egy pillanattal megelőzve)"),
+      Master("támad à tempo éppen a terc-invitóba, vagy hátrál, vagy hátrál és követi az invitókat, vagy maga is vesz egy invitót, stb. stb."),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.szekond_gard,
+      S.current.szekond_kotes,
+      S.current.terc_invito,
+      S.current.kvart_invito,
+      S.current.kotes_elorelepessel,
+      S.current.a_tempo,
+      S.current.hatra_lepes,
+    ]
+);
+
+final Exercise ex13a = Exercise(
+    title: "13a",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Student(S.current.terc_gard),
+      Master(S.current.terc_kotes),
+      Student("előre lép kvint-kötéssel és kvart-invitóval (a jobb és bal láb előrehozását egy-egy pillanattal megelőzve)"),
+      Master("a kardot mereven a felső vonalban tartja és hátra lép"),
+      Master("előre lép azonnal à tempo (hogy ellenfele egy másodszor ne tudjon hátrálni) kvint-kötéssel és kitör oldal- vagy hasvágással, vagy ha ellenfele mégis hátrálhatott, belső karvágással, éllel vagy fokkal, stb."),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.terc_gard,
+      S.current.terc_kotes,
+      S.current.kvint_kotes,
+      S.current.kvart_invito,
+      S.current.kotes_elorelepessel,
+      S.current.felso_vonal,
+      S.current.hatra_lepes,
+      S.current.a_tempo,
+      S.current.oldalvagas,
+      S.current.hasvagas,
+      S.current.karvagas,
+      S.current.belso_karvagas,
+      S.current.belso_fokvagas,
+      S.current.fokvagas,
+    ]
+);
+
+final Exercise ex13b = Exercise(
+    title: "13b",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Student(S.current.terc_gard),
+      Master(S.current.terc_kotes),
+      Student("előre lép kvint-kötéssel és kvart-invitóval (a jobb és bal láb előrehozását egy-egy pillanattal megelőzve)"),
+      Master("hátra lép és támad külső vágással"),
+      Student("véd terc-védéssel, előre lép terc-kötéssel és támad valamit (pl. ellennyomást érezve [coupé-] fejvágással)"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.terc_gard,
+      S.current.terc_kotes,
+      S.current.kvint_kotes,
+      S.current.kvart_invito,
+      S.current.kotes_elorelepessel,
+      S.current.hatra_lepes,
+      S.current.kulso_vagas,
+      S.current.terc_vedes,
+      S.current.elore_lepes,
+      S.current.coupe,
+      S.current.coupe_fejvagas,
+    ]
+);
+
+final Exercise ex13c = Exercise(
+    title: "13c",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Student(S.current.terc_gard),
+      Master(S.current.terc_kotes),
+      Student("előre lép kvint-kötéssel és kvart-invitóval (a jobb és bal láb előrehozását egy-egy pillanattal megelőzve)"),
+      Master("támad hasvágással és gardba visszatérve, gyorsan hátra lép"),
+      Student("véd mély kvart-védéssel, előre lép terc-kötéssel és vág (coupé-) fejet, mellet vagy hasat"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.terc_gard,
+      S.current.terc_kotes,
+      S.current.kvint_kotes,
+      S.current.kvart_invito,
+      S.current.kotes_elorelepessel,
+      S.current.hasvagas,
+      S.current.hatra_lepes,
+      S.current.mely_kvart_vedes,
+      S.current.elore_lepes,
+      S.current.coupe,
+      S.current.coupe_fejvagas,
+      S.current.mellvagas,
+    ]
+);
+
+final Exercise ex14a = Exercise(
+    title: "14a",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Student(S.current.terc_gard),
+      Master(S.current.terc_gard),
+      Student("előre lép szekond-invitó- és kvart-kötéssel (a jobb és bal láb előrehozását egy-egy pillanattal megelőzve)"),
+      Master("hátra lép és támad ugrás-rohammal, fejvágással vagy à tempo hasvágással, siet terc-gardon át szekondba és hátra lép gyorsan"),
+      Student("véd kvint- vagy mély kvart-védéssel, előre lép prim-kötéssel és támad kitöréssel testre"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.terc_gard,
+      S.current.szekond_invito,
+      S.current.kvart_kotes,
+      S.current.hatra_lepes,
+      S.current.roham,
+      S.current.ugras_roham,
+      S.current.fejvagas,
+      S.current.a_tempo,
+      S.current.hasvagas,
+      S.current.szekond_gard,
+      S.current.hatra_lepes,
+      S.current.kvint_vedes,
+      S.current.mely_kvart_vedes,
+      S.current.elore_lepes,
+      S.current.prim_kotes,
+      S.current.kitores,
+    ]
+);
+
+final Exercise ex14b = Exercise(
+    title: "14b",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Student(S.current.terc_gard),
+      Master(S.current.terc_gard),
+      Student("előre lép szekond-invitó- és kvart-kötéssel (a jobb és bal láb előrehozását egy-egy pillanattal megelőzve)"),
+      Master("hátra lép és támad à tempo (a kvart-kötésnek kitérve), külső karvágással szögben (hátra kitöréssel) és siet magas tercbe"),
+      Student("véd (mély) terc-védéssel és visszavág belső karvágást fokkal vagy előre lép kvint-kötéssel és támad kitöréssel testre")
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.terc_gard,
+      S.current.szekond_invito,
+      S.current.kvart_kotes,
+      S.current.hatra_lepes,
+      S.current.a_tempo,
+      S.current.karvagas,
+      S.current.kulso_karvagas,
+      S.current.szogvagas,
+      S.current.hatra_kitores,
+      S.current.magas_terc,
+      S.current.terc_vedes,
+      S.current.mely_terc_vedes,
+      S.current.belso_karvagas,
+      S.current.belso_fokvagas,
+      S.current.fokvagas,
+      S.current.elore_lepes,
+      S.current.kvint_kotes,
+      S.current.kitores,
+    ]
+);
+
+final Exercise ex15a = Exercise(
+    title: "15a",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Student(S.current.szekond_gard),
+      Master(S.current.szekond_gard),
+      Student("előre lép terc-kötéssel"),
+      Master("hátra lép, a kardot mereven az alsó vonalban tartja"),
+      Student("támad ugrás-rohammal, prim-kötéssel és alsó egyenes szúrással, vagy lendített fejvágással, esetleg à tempo (oldal- vagy hasvágással)"),
+      Master("véd megfelelően, de elmulasztja a visszavágást"),
+      Student("ismétli a támadást"),
+    ],
+    keywords: [
+      S.current.szekond_gard,
+      S.current.kotes_elorelepessel,
+      S.current.terc_kotes,
+      S.current.hatra_lepes,
+      S.current.also_vonal,
+      S.current.roham,
+      S.current.ugras_roham,
+      S.current.prim_kotes,
+      S.current.szuras,
+      S.current.egyenes_szuras,
+      S.current.also_egyenes_szuras,
+      S.current.fejvagas,
+      S.current.lenditett_fejvagas,
+      S.current.a_tempo,
+      S.current.oldalvagas,
+      S.current.hasvagas,
+      S.current.ismetelt_tamadas,
+    ],
+);
+
+final Exercise ex15b = Exercise(
+    title: "15b",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Student(S.current.szekond_gard),
+      Master(S.current.szekond_gard),
+      Student("előre lép terc-kötéssel"),
+      Master("támad alsó szúrással (4. kézállás) vagy alsó karvágással fokkal (hátra kitöréssel)"),
+      Student("előre lép, a szándékolt prim-kötéssel védi a szúrást, az alsó karvágást eltéríti és visszavág"),
+    ],
+    keywords: [
+      S.current.szekond_gard,
+      S.current.kotes_elorelepessel,
+      S.current.terc_kotes,
+      S.current.szuras,
+      S.current.also_szuras,
+      S.current.karvagas,
+      S.current.also_karvagas,
+      S.current.also_fokvagas,
+      S.current.fokvagas,
+      S.current.hatra_kitores,
+      S.current.elore_lepes,
+      S.current.prim_kotes,
+    ],
+);
+
+final Exercise ex16a = Exercise(
+    title: "16a",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Student(S.current.szekond_gard),
+      Master(S.current.szekond_gard),
+      Student("előre lép szekond-kötéssel"),
+      Master("előre lép prim-kötéssel és támad"),
+      Student("megáll vagy hátra lép, véd és visszavág"),
+    ],
+    keywords: [
+      S.current.szekond_gard,
+      S.current.kotes_elorelepessel,
+      S.current.szekond_kotes,
+      S.current.elore_lepes,
+      S.current.prim_kotes,
+      S.current.hatra_lepes,
+    ],
+);
+
+final Exercise ex16b = Exercise(
+    title: "16b",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Student(S.current.szekond_gard),
+      Master(S.current.szekond_gard),
+      Student("előre lép szekond-kötéssel"),
+      Master("előre lép prim-kötéssel"),
+      Student("kitér à tempo és vág vagy szúr"),
+    ],
+    keywords: [
+      S.current.szekond_gard,
+      S.current.kotes_elorelepessel,
+      S.current.szekond_kotes,
+      S.current.elore_lepes,
+      S.current.prim_kotes,
+      S.current.kiteres,
+      S.current.a_tempo,
+      S.current.szuras,
+    ],
+);
+
+final Exercise ex17 = Exercise(
+    title: "17",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Student(S.current.szekond_gard),
+      Master(S.current.terc_gard),
+      Student("előre lép prim-kötéssel"),
+      Master("kitér a kötésnek és támad szekond-kötéssel és felső kitérő szúrással vagy külső arcvágással, stb."),
+      Student("megáll vagy hátra lép"),
+    ],
+    keywords: [
+      S.current.szekond_gard,
+      S.current.terc_gard,
+      S.current.kotes_elorelepessel,
+      S.current.prim_kotes,
+      S.current.kiteres,
+      S.current.szekond_kotes,
+      S.current.szuras,
+      S.current.felso_szuras,
+      S.current.kitero_szuras,
+      S.current.felso_kitero_szuras,
+      S.current.arcvagas,
+      S.current.kulso_arcvagas,
+    ],
+);
+
+final Exercise ex18a = Exercise(
+    title: "18a",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Student(S.current.terc_gard),
+      Master(S.current.terc_gard),
+      Student("előre lép és a kardot az alsó vonalban tartja"),
+      Master("megáll és szekond-kötést akar venni"),
+      Student("kitér à tempo felső szúrással vagy fejvágással"),
+    ],
+    keywords: [
+      S.current.terc_gard,
+      S.current.elore_lepes,
+      S.current.also_vonal,
+      S.current.szekond_kotes,
+      S.current.a_tempo,
+      S.current.szuras,
+      S.current.felso_szuras,
+      S.current.fejvagas,
+    ],
+);
+
+final Exercise ex18b = Exercise(
+    title: "18b",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Student(S.current.terc_gard),
+      Master(S.current.terc_gard),
+      Student("előre lép és a kardot az alsó vonalban tartja"),
+      Master("hátra lép és vesz szekond-kötést"),
+      Student("támad kötésben maradva, ugrás-rohammal"),
+      Master("véd és esetleg újra hátra lépve, elmulasztja a visszavágást"),
+      Student("követi ismételt rohammal és ismételt vágással (támadással) valamelyik résbe"),
+    ],
+    keywords: [
+      S.current.terc_gard,
+      S.current.elore_lepes,
+      S.current.also_vonal,
+      S.current.roham,
+      S.current.ugras_roham,
+      S.current.ismetelt_roham,
+      S.current.ismetelt_tamadas,
+    ],
+);
+
+final Exercise ex19 = Exercise(
+    title: "19",
+    noteBefore: S.current.rendes_tavolsag,
+    flow: [
+      Student(S.current.szekond_gard),
+      Master(S.current.szekond_gard),
+      Student("előre lép és a kardot a felső vonalban tartja"),
+      Master("hátra lép és vesz kvart-kötést"),
+      Student("támad kötésben maradva ugrás-rohammal"),
+      Master("elővág, de készakarva röviden vagy a kardkosárra és hátraugrik szekond-gardba"),
+      Student("ismétli a támadást ismételt rohammal"),
+    ],
+    keywords: [
+      S.current.rendes_tavolsag,
+      S.current.szekond_gard,
+      S.current.felso_vonal,
+      S.current.elore_lepes,
+      S.current.hatra_lepes,
+      S.current.kvart_kotes,
+      S.current.roham,
+      S.current.ugras_roham,
+      S.current.elovagas,
+      S.current.hatra_ugras,
+      S.current.ismetelt_tamadas,
+      S.current.ismetelt_roham,
     ]
 );

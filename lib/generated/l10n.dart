@@ -682,6 +682,206 @@ class S {
       args: [],
     );
   }
+
+  /// `kvint invito`
+  String get kvint_invito {
+    return Intl.message(
+      'kvint invito',
+      name: 'kvint_invito',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `kvart invito`
+  String get kvart_invito {
+    return Intl.message(
+      'kvart invito',
+      name: 'kvart_invito',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `prim-kötés`
+  String get prim_kotes {
+    return Intl.message(
+      'prim-kötés',
+      name: 'prim_kotes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `egyenes szúrás`
+  String get egyenes_szuras {
+    return Intl.message(
+      'egyenes szúrás',
+      name: 'egyenes_szuras',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `kvart-védés`
+  String get kvart_vedes {
+    return Intl.message(
+      'kvart-védés',
+      name: 'kvart_vedes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `kvint-kötés`
+  String get kvint_kotes {
+    return Intl.message(
+      'kvint-kötés',
+      name: 'kvint_kotes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `felső vonal`
+  String get felso_vonal {
+    return Intl.message(
+      'felső vonal',
+      name: 'felso_vonal',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `előre lépés`
+  String get elore_lepes {
+    return Intl.message(
+      'előre lépés',
+      name: 'elore_lepes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `külső vágás`
+  String get kulso_vagas {
+    return Intl.message(
+      'külső vágás',
+      name: 'kulso_vagas',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `szekond invito`
+  String get szekond_invito {
+    return Intl.message(
+      'szekond invito',
+      name: 'szekond_invito',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `kvart-kötés`
+  String get kvart_kotes {
+    return Intl.message(
+      'kvart-kötés',
+      name: 'kvart_kotes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `magas terc`
+  String get magas_terc {
+    return Intl.message(
+      'magas terc',
+      name: 'magas_terc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `mély terc-védés`
+  String get mely_terc_vedes {
+    return Intl.message(
+      'mély terc-védés',
+      name: 'mely_terc_vedes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `alsó vonal`
+  String get also_vonal {
+    return Intl.message(
+      'alsó vonal',
+      name: 'also_vonal',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `alsó egyenes szúrás`
+  String get also_egyenes_szuras {
+    return Intl.message(
+      'alsó egyenes szúrás',
+      name: 'also_egyenes_szuras',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `lendített fejvágás`
+  String get lenditett_fejvagas {
+    return Intl.message(
+      'lendített fejvágás',
+      name: 'lenditett_fejvagas',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ismételt támadás`
+  String get ismetelt_tamadas {
+    return Intl.message(
+      'ismételt támadás',
+      name: 'ismetelt_tamadas',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ismételt roham`
+  String get ismetelt_roham {
+    return Intl.message(
+      'ismételt roham',
+      name: 'ismetelt_roham',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `alsó fokvágás`
+  String get also_fokvagas {
+    return Intl.message(
+      'alsó fokvágás',
+      name: 'also_fokvagas',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `hátra ugrás`
+  String get hatra_ugras {
+    return Intl.message(
+      'hátra ugrás',
+      name: 'hatra_ugras',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
