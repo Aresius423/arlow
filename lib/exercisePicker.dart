@@ -9,16 +9,16 @@ import 'objects.dart';
 class AllExercises extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: makeChapters(context, chapters),
-      ),
-    );
+    return makeChapterView(context, chapters);
   }
 }
 
 List<Widget> makeChapters(BuildContext context, List<Chapter> data) {
   return data.expand((chapter) {
+    List<Widget> exercises = chapter.exercises.map((ex) {
+      return makeExerciseButton(context, ex);
+    }).toList();
+
     return [
       Container(
         padding: EdgeInsets.all(10),
@@ -32,10 +32,9 @@ List<Widget> makeChapters(BuildContext context, List<Chapter> data) {
       GridView.count(
         crossAxisCount: 4,
         shrinkWrap: true,
+        primary: false,
         padding: EdgeInsets.all(10),
-        children: chapter.exercises.map((ex) {
-          return makeExerciseButton(context, ex);
-        }).toList(),
+        children: exercises,
       )
     ];
   }).toList();
@@ -125,11 +124,15 @@ class TechPage extends StatelessWidget{
           elevation: 5,
           title: Text(tech),
       ),
-      body: Container(
-        child: Column(
-          children: makeChapters(context, nonEmptyFilteredChapters),
-        ),
-      ),
+      body: makeChapterView(context, nonEmptyFilteredChapters),
     );
   }
+}
+
+Widget makeChapterView(BuildContext context, List<Chapter> chapters) {
+  return Container(
+    child: ListView(
+      children: makeChapters(context, chapters)
+    )
+  );
 }

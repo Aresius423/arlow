@@ -17,18 +17,15 @@ class ExercisePage extends StatelessWidget {
     }
     colItems = [
       ...colItems,
-      Row(
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.only(left: 8),
-            child: Text(S.current.master, style: Theme.of(context).textTheme.headline6),
-          ),
-          Expanded(child: Text("")),
-          Padding(
-            padding: const EdgeInsets.only(right: 8),
-            child: Text(S.current.student, style: Theme.of(context).textTheme.headline6),
-          ),
-        ],
+      Padding(
+        padding: const EdgeInsets.all(8),
+        child: Row(
+          children: <Widget>[
+            Text(S.current.master, style: Theme.of(context).textTheme.headline6),
+            Expanded(child: Text("")),
+            Text(S.current.student, style: Theme.of(context).textTheme.headline6),
+          ],
+        ),
       ),
       ...exercise.flow.map(makeFlow).toList(),
     ];
@@ -42,7 +39,7 @@ class ExercisePage extends StatelessWidget {
         title: Text(exercise.title),
       ),
       body: Container(
-        child: Column(children: colItems),
+        child: ListView(children: colItems),
       ),
     );
   }
