@@ -5,6 +5,9 @@ import 'exercisePicker.dart';
 import 'generated/l10n.dart';
 
 class Menu extends StatelessWidget{
+  final chapters;
+  Menu(this.chapters);
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -24,8 +27,8 @@ class Menu extends StatelessWidget{
         ),
         body: TabBarView(
           children: [
-            AllExercises(),
-            TechExercises(),
+            AllExercises(chapters),
+            TechExercises(chapters),
           ]
         )
       )

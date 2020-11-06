@@ -6,8 +6,11 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'data.dart';
 import 'generated/l10n.dart';
 import 'package:intl/intl.dart';
+
+import 'objects.dart';
 
 var locale = 'hu';
 
@@ -48,9 +51,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  List<Chapter> chapters;
+
   @override
   Widget build(BuildContext context) {
     Intl.defaultLocale = locale;
+    chapters = makeChapterData();
 
     return MaterialApp(
       title: S.current.title,
@@ -80,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
             )
           ]
         ),
-        body: Menu(),
+        body: Menu(chapters),
       )
     );
   }

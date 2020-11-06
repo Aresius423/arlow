@@ -1,20 +1,20 @@
 import 'generated/l10n.dart';
 import 'objects.dart';
 
-final chapters = [aTempo, egyszeruTamadasok];
+List<Chapter> makeChapterData() => [aTempo(), egyszeruTamadasok()];
 
-final Chapter aTempo = Chapter(
+Chapter aTempo() => Chapter(
   title: "A tempo",
   exercises: [
-    ex1,
-    ex2a,
-    ex2b,
-    ex3a,
-    ex3b
+    ex1(),
+    ex2a(),
+    ex2b(),
+    ex3a(),
+    ex3b()
   ],
 );
 
-final ex1 = Exercise(
+Exercise ex1() => Exercise(
   title: "1",
   noteBefore: S.current.kozep_tavolsag,
   flow: [
@@ -40,7 +40,7 @@ final ex1 = Exercise(
   ]
 );
 
-final ex2a = Exercise(
+Exercise ex2a() => Exercise(
   title: "2a",
   noteBefore: S.current.folytatas,
   flow: [
@@ -55,7 +55,7 @@ final ex2a = Exercise(
   ]
 );
 
-final ex2b = Exercise(
+Exercise ex2b() => Exercise(
   title: "2b",
   noteBefore: S.current.folytatas,
   flow: [
@@ -73,7 +73,7 @@ final ex2b = Exercise(
   ]
 );
 
-final ex3a = Exercise(
+Exercise ex3a() => Exercise(
   title: "3a",
   noteBefore: S.current.folytatas,
   flow: [
@@ -97,7 +97,7 @@ final ex3a = Exercise(
   ]
 );
 
-final ex3b = Exercise(
+Exercise ex3b() => Exercise(
     title: "3b",
     noteBefore: S.current.folytatas,
     flow: [
@@ -123,29 +123,29 @@ final ex3b = Exercise(
 // AZ EGYSZERŰ TÁMADÁSOK ÉS AZOK ELHÁRÍTÁSA
 // ___________________________
 
-final Chapter egyszeruTamadasok = Chapter(
+Chapter egyszeruTamadasok() => Chapter(
   title: S.current.egyszeru_tamadasok,
   exercises: [
-    ex4a, ex4b, ex4c,
-    ex5a, ex5b,
-    ex6a, ex6b,
-    ex7a, ex7b, ex7ca, ex7cb, ex7d, ex7e,
-    ex8a, ex8b, ex8c, ex8d, ex8e,
-    ex9a, ex9b, ex9c, ex9da, ex9db,
-    ex10a, ex10b, ex10c, ex10d, ex10e, ex10f,
-    ex11a, ex11b, ex11c, ex11d,
-    ex12a, ex12b,
-    ex13a, ex13b, ex13c,
-    ex14a, ex14b,
-    ex15a, ex15b,
-    ex16a, ex16b,
-    ex17,
-    ex18a, ex18b,
-    ex19,
+    ex4a(), ex4b(), ex4c(),
+    ex5a(), ex5b(),
+    ex6a(), ex6b(),
+    ex7a(), ex7b(), ex7ca(), ex7cb(), ex7d(), ex7e(),
+    ex8a(), ex8b(), ex8c(), ex8d(), ex8e(),
+    ex9a(), ex9b(), ex9c(), ex9da(), ex9db(),
+    ex10a(), ex10b(), ex10c(), ex10d(), ex10e(), ex10f(),
+    ex11a(), ex11b(), ex11c(), ex11d(),
+    ex12a(), ex12b(),
+    ex13a(), ex13b(), ex13c(),
+    ex14a(), ex14b(),
+    ex15a(), ex15b(),
+    ex16a(), ex16b(),
+    ex17(),
+    ex18a(), ex18b(),
+    ex19(),
   ]
 );
 
-final Exercise ex4a = Exercise(
+Exercise ex4a() => Exercise(
   title: "4a",
   noteBefore: S.current.rendes_tavolsag,
   flow: [
@@ -174,7 +174,7 @@ final Exercise ex4a = Exercise(
   ]
 );
 
-final Exercise ex4b = Exercise(
+Exercise ex4b() => Exercise(
     title: "4b",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -202,9 +202,9 @@ final Exercise ex4b = Exercise(
     ]
 );
 
-final Exercise ex4c = Exercise(
+Exercise ex4c() => Exercise(
   title: "4c",
-  noteBefore: ex4b.noteBefore,
+  noteBefore: S.current.rendes_tavolsag,
   flow: [
     Student(S.current.terc_gard),
     Master("${S.current.terc_invito} ${S.current.or} ${S.current.terc_kotes}"),
@@ -212,10 +212,26 @@ final Exercise ex4c = Exercise(
     Master(S.current.e4_4),
   ],
   noteAfter: S.current.e4_5,
-  keywords: ex4b.keywords,
+  keywords: [
+    S.current.rendes_tavolsag,
+    S.current.terc_gard,
+    S.current.terc_kotes,
+    S.current.terc_invito,
+    S.current.mellvagas,
+    S.current.hasvagas,
+    S.current.ugras_roham,
+    S.current.roham,
+    S.current.hatra_lepes,
+    S.current.utanvagas,
+    S.current.kitores,
+    S.current.karvagas,
+    S.current.kulso_karvagas,
+    S.current.also_karvagas,
+    S.current.hatra_kitores
+  ]
 );
 
-final Exercise ex5a = Exercise(
+Exercise ex5a() => Exercise(
   title: "5a",
   noteBefore: S.current.rendes_tavolsag,
   flow: [
@@ -239,7 +255,7 @@ final Exercise ex5a = Exercise(
   ]
 );
 
-final Exercise ex5b = Exercise(
+Exercise ex5b() => Exercise(
     title: "5b",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -265,7 +281,7 @@ final Exercise ex5b = Exercise(
     ]
 );
 
-final Exercise ex6a = Exercise(
+Exercise ex6a() => Exercise(
   title: "6a",
   noteBefore: S.current.rendes_tavolsag,
   flow: [
@@ -290,7 +306,7 @@ final Exercise ex6a = Exercise(
   ]
 );
 
-final Exercise ex6b = Exercise(
+Exercise ex6b() => Exercise(
     title: "6b",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -316,7 +332,7 @@ final Exercise ex6b = Exercise(
     ]
 );
 
-final Exercise ex7a = Exercise(
+Exercise ex7a() => Exercise(
     title: "7a",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -337,7 +353,7 @@ final Exercise ex7a = Exercise(
     ]
 );
 
-final Exercise ex7b = Exercise(
+Exercise ex7b() => Exercise(
     title: "7b",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -363,7 +379,7 @@ final Exercise ex7b = Exercise(
     ]
 );
 
-final Exercise ex7ca = Exercise(
+Exercise ex7ca() => Exercise(
     title: "7ca",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -389,7 +405,7 @@ final Exercise ex7ca = Exercise(
     ]
 );
 
-final Exercise ex7cb = Exercise(
+Exercise ex7cb() => Exercise(
     title: "7cb",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -412,7 +428,7 @@ final Exercise ex7cb = Exercise(
     ]
 );
 
-final Exercise ex7d = Exercise(
+Exercise ex7d() => Exercise(
     title: "7d",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -432,7 +448,7 @@ final Exercise ex7d = Exercise(
     ]
 );
 
-final Exercise ex7e = Exercise(
+Exercise ex7e() => Exercise(
     title: "7e",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -450,7 +466,7 @@ final Exercise ex7e = Exercise(
     ]
 );
 
-final Exercise ex8a = Exercise(
+Exercise ex8a() => Exercise(
   title: "8a",
   noteBefore: S.current.rendes_tavolsag,
   flow: [
@@ -476,7 +492,7 @@ final Exercise ex8a = Exercise(
   ]
 );
 
-final Exercise ex8b = Exercise(
+Exercise ex8b() => Exercise(
     title: "8b",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -499,7 +515,7 @@ final Exercise ex8b = Exercise(
     ]
 );
 
-final Exercise ex8c = Exercise(
+Exercise ex8c() => Exercise(
     title: "8c",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -524,7 +540,7 @@ final Exercise ex8c = Exercise(
     ]
 );
 
-final Exercise ex8d = Exercise(
+Exercise ex8d() => Exercise(
     title: "8d",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -541,7 +557,7 @@ final Exercise ex8d = Exercise(
     ]
 );
 
-final Exercise ex8e = Exercise(
+Exercise ex8e() => Exercise(
     title: "8e",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -558,7 +574,7 @@ final Exercise ex8e = Exercise(
     ]
 );
 
-final Exercise ex9a = Exercise(
+Exercise ex9a() => Exercise(
     title: "9a",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -578,7 +594,7 @@ final Exercise ex9a = Exercise(
     ]
 );
 
-final Exercise ex9b = Exercise(
+Exercise ex9b() => Exercise(
     title: "9b",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -599,7 +615,7 @@ final Exercise ex9b = Exercise(
     ]
 );
 
-final Exercise ex9c = Exercise(
+Exercise ex9c() => Exercise(
     title: "9c",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -623,7 +639,7 @@ final Exercise ex9c = Exercise(
     ]
 );
 
-final Exercise ex9da = Exercise(
+Exercise ex9da() => Exercise(
     title: "9da",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -647,7 +663,7 @@ final Exercise ex9da = Exercise(
     ]
 );
 
-final Exercise ex9db = Exercise(
+Exercise ex9db() => Exercise(
     title: "9db",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -672,7 +688,7 @@ final Exercise ex9db = Exercise(
     ]
 );
 
-final Exercise ex10a = Exercise(
+Exercise ex10a() => Exercise(
     title: "10a",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -694,7 +710,7 @@ final Exercise ex10a = Exercise(
     ]
 );
 
-final Exercise ex10b = Exercise(
+Exercise ex10b() => Exercise(
     title: "10b",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -715,7 +731,7 @@ final Exercise ex10b = Exercise(
     ]
 );
 
-final Exercise ex10c = Exercise(
+Exercise ex10c() => Exercise(
     title: "10c",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -738,7 +754,7 @@ final Exercise ex10c = Exercise(
     ]
 );
 
-final Exercise ex10d = Exercise(
+Exercise ex10d() => Exercise(
     title: "10d",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -757,7 +773,7 @@ final Exercise ex10d = Exercise(
     ]
 );
 
-final Exercise ex10e = Exercise(
+Exercise ex10e() => Exercise(
     title: "10e",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -776,7 +792,7 @@ final Exercise ex10e = Exercise(
     ]
 );
 
-final Exercise ex10f = Exercise(
+Exercise ex10f() => Exercise(
     title: "10f",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -796,7 +812,7 @@ final Exercise ex10f = Exercise(
     ]
 );
 
-final Exercise ex11a = Exercise(
+Exercise ex11a() => Exercise(
     title: "11a",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -815,7 +831,7 @@ final Exercise ex11a = Exercise(
     ]
 );
 
-final Exercise ex11b = Exercise(
+Exercise ex11b() => Exercise(
     title: "11b",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -834,7 +850,7 @@ final Exercise ex11b = Exercise(
     ]
 );
 
-final Exercise ex11c = Exercise(
+Exercise ex11c() => Exercise(
     title: "11c",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -856,7 +872,7 @@ final Exercise ex11c = Exercise(
     ]
 );
 
-final Exercise ex11d = Exercise(
+Exercise ex11d() => Exercise(
     title: "11d",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -875,7 +891,7 @@ final Exercise ex11d = Exercise(
     ]
 );
 
-final Exercise ex12a = Exercise(
+Exercise ex12a() => Exercise(
     title: "12a",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -898,7 +914,7 @@ final Exercise ex12a = Exercise(
     ]
 );
 
-final Exercise ex12b = Exercise(
+Exercise ex12b() => Exercise(
     title: "12b",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -919,7 +935,7 @@ final Exercise ex12b = Exercise(
     ]
 );
 
-final Exercise ex13a = Exercise(
+Exercise ex13a() => Exercise(
     title: "13a",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -948,7 +964,7 @@ final Exercise ex13a = Exercise(
     ]
 );
 
-final Exercise ex13b = Exercise(
+Exercise ex13b() => Exercise(
     title: "13b",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -974,7 +990,7 @@ final Exercise ex13b = Exercise(
     ]
 );
 
-final Exercise ex13c = Exercise(
+Exercise ex13c() => Exercise(
     title: "13c",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -1001,7 +1017,7 @@ final Exercise ex13c = Exercise(
     ]
 );
 
-final Exercise ex14a = Exercise(
+Exercise ex14a() => Exercise(
     title: "14a",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -1032,7 +1048,7 @@ final Exercise ex14a = Exercise(
     ]
 );
 
-final Exercise ex14b = Exercise(
+Exercise ex14b() => Exercise(
     title: "14b",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -1065,7 +1081,7 @@ final Exercise ex14b = Exercise(
     ]
 );
 
-final Exercise ex15a = Exercise(
+Exercise ex15a() => Exercise(
     title: "15a",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -1098,7 +1114,7 @@ final Exercise ex15a = Exercise(
     ],
 );
 
-final Exercise ex15b = Exercise(
+Exercise ex15b() => Exercise(
     title: "15b",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -1124,7 +1140,7 @@ final Exercise ex15b = Exercise(
     ],
 );
 
-final Exercise ex16a = Exercise(
+Exercise ex16a() => Exercise(
     title: "16a",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -1144,7 +1160,7 @@ final Exercise ex16a = Exercise(
     ],
 );
 
-final Exercise ex16b = Exercise(
+Exercise ex16b() => Exercise(
     title: "16b",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -1166,7 +1182,7 @@ final Exercise ex16b = Exercise(
     ],
 );
 
-final Exercise ex17 = Exercise(
+Exercise ex17() => Exercise(
     title: "17",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -1192,7 +1208,7 @@ final Exercise ex17 = Exercise(
     ],
 );
 
-final Exercise ex18a = Exercise(
+Exercise ex18a() => Exercise(
     title: "18a",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -1214,7 +1230,7 @@ final Exercise ex18a = Exercise(
     ],
 );
 
-final Exercise ex18b = Exercise(
+Exercise ex18b() => Exercise(
     title: "18b",
     noteBefore: S.current.rendes_tavolsag,
     flow: [
@@ -1237,7 +1253,7 @@ final Exercise ex18b = Exercise(
     ],
 );
 
-final Exercise ex19 = Exercise(
+Exercise ex19() => Exercise(
     title: "19",
     noteBefore: S.current.rendes_tavolsag,
     flow: [

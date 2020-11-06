@@ -7,6 +7,9 @@ import 'exercisePage.dart';
 import 'objects.dart';
 
 class AllExercises extends StatelessWidget {
+  final chapters;
+  AllExercises(this.chapters);
+
   @override
   Widget build(BuildContext context) {
     return makeChapterView(context, chapters);
@@ -69,16 +72,19 @@ Widget makeExerciseButton(BuildContext context, Exercise exercise) {
 }
 
 class TechExercises extends StatelessWidget {
+  final chapters;
+  TechExercises(this.chapters);
+
   @override
   Widget build(BuildContext context) {
     return ListView(
       padding: const EdgeInsets.all(8),
-      children: makeTechniques(context),
+      children: makeTechniques(context, chapters),
     );
   }
 }
 
-List<Widget> makeTechniques(BuildContext context) {
+List<Widget> makeTechniques(BuildContext context, List<Chapter> chapters) {
   List<String> techniques = chapters.expand((chapter) {
     return chapter.exercises.expand((e) => e.keywords).toSet();
   }).toSet().toList();
@@ -90,7 +96,7 @@ List<Widget> makeTechniques(BuildContext context) {
       child: GestureDetector(
         onTap: () {
           Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => TechPage(tech))
+            MaterialPageRoute(builder: (context) => TechPage(tech, chapters))
           );
         },
         child: Container(
@@ -112,7 +118,9 @@ List<Widget> makeTechniques(BuildContext context) {
 
 class TechPage extends StatelessWidget{
   final String tech;
-  TechPage(this.tech);
+  final List<Chapter> chapters;
+
+  TechPage(this.tech, this.chapters);
 
   @override
   Widget build(BuildContext context) {
