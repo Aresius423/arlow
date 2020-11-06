@@ -20,9 +20,9 @@ final ex1 = Exercise(
   flow: [
     Student(S.current.szekond_gard),
     Master(S.current.szekond_kotes),
-    Student("támad felső kitérő szúrással vagy fejvágással"),
-    Master("véd magas terc- vagy kvint-védéssel és mutat alsó szúrást"),
-    Student("siet akkor is, ha talált, terc-gardon át szekond-gardba"),
+    Student(S.current.e1_1),
+    Master(S.current.e1_2),
+    Student(S.current.e1_3),
   ],
   noteAfter: S.current.note_ex_1,
   keywords: [
@@ -44,8 +44,8 @@ final ex2a = Exercise(
   title: "2a",
   noteBefore: S.current.folytatas,
   flow: [
-    Master("ha látja, hogy a tanítvány hibásan megy szekond-gardba, visszavág külső karvágással"),
-    Student("igyekszik hibájáról leszokni"),
+    Master(S.current.e2_1),
+    Student(S.current.e2_2),
   ],
   keywords: [
     S.current.kozep_tavolsag,
@@ -59,8 +59,8 @@ final ex2b = Exercise(
   title: "2b",
   noteBefore: S.current.folytatas,
   flow: [
-    Master("visszavág (szúr) tetszése szerint, de csak egyszerű riposzttal"),
-    Student("igyekszik terc-gardon át a megfelelő védéshez jutni, vagy ha a visszavágás valamivel késett, a védést már a szekond-gardból veszi, melybe az előbbiek szerint sietni kellett."),
+    Master(S.current.e2_3),
+    Student(S.current.e2_4),
   ],
   keywords: [
     S.current.kozep_tavolsag,
@@ -77,9 +77,9 @@ final ex3a = Exercise(
   title: "3a",
   noteBefore: S.current.folytatas,
   flow: [
-    Student("támad külső arc- vagy fej-vágással vagy felső karvágással"),
-    Master("véd magas terc- vagy kvint-védéssel, de a kelleténél valamivel korábban és vesz ismét szekond-kötést"),
-    Student("nem találhat, visszasiet szekond-gardba és támad most már à tempo vagy oldal- vagy has-vágással"),
+    Student(S.current.e3_1),
+    Master(S.current.e3_2),
+    Student(S.current.e3_3),
   ],
   keywords: [
     S.current.kozep_tavolsag,
@@ -101,9 +101,9 @@ final ex3b = Exercise(
     title: "3b",
     noteBefore: S.current.folytatas,
     flow: [
-      Student("támad külső arc- vagy fej-vágással vagy felső karvágással"),
-      Master("véd magas terc- vagy kvint-védéssel, de a kelleténél valamivel korábban és vesz ismét szekond-kötést"),
-      Student("támad à tempo fejvágással abban a pillanatban, amikor a mester idő előtti védéséből ismét a szekond-kötésbe készül visszamenni"),
+      Student(S.current.e3_1),
+      Master(S.current.e3_2),
+      Student(S.current.e3_4),
     ],
     keywords: [
       S.current.kozep_tavolsag,
@@ -296,7 +296,7 @@ final Exercise ex6b = Exercise(
     flow: [
       Master(S.current.szekond_kotes),
       Student(S.current.szekond_gard),
-      Master("à tempo támad fejvágással (rohammal) *"),
+      Master("a tempo támad fejvágással (rohammal) *"),
       Student("véd és visszavág külső karra szögben, vagy oldal-, fej-, mell- vagy hasvágással"),
     ],
     keywords: [
@@ -322,7 +322,7 @@ final Exercise ex7a = Exercise(
       Master(S.current.szekond_gard),
       Student("szekond-kötés előrelépéssel"),
       Master(S.current.megall),
-      Student("támad fejvágással vagy à tempo oldal- vagy hasvágással vagy à tempo fejvágással (lásd 3b gyakorlat)")
+      Student("támad fejvágással vagy a tempo oldal- vagy hasvágással vagy a tempo fejvágással (lásd 3b gyakorlat)")
     ],
     keywords: [
       S.current.rendes_tavolsag,
@@ -343,7 +343,7 @@ final Exercise ex7b = Exercise(
       Master(S.current.szekond_gard),
       Student("szekond-kötés előrelépéssel"),
       Master("hátra lép"),
-      Student("ugrás-rohammal* - támad fejvágással vagy à tempo oldal- vagy hasvágással vagy à tempo fejvágással (lásd 3b gyakorlat)"),
+      Student("ugrás-rohammal* - támad fejvágással vagy a tempo oldal- vagy hasvágással vagy a tempo fejvágással (lásd 3b gyakorlat)"),
       Master(S.current.ved_es_visszavag),
     ],
     noteAfter: "könyv szerint: támad mint fent, de ugrás-rohammal",
@@ -368,7 +368,7 @@ final Exercise ex7ca = Exercise(
     flow: [
       Master(S.current.szekond_gard),
       Student("szekond-kötés előrelépéssel"),
-      Student("támad fejvágással vagy à tempo oldal- vagy hasvágással vagy à tempo fejvágással (lásd 3b gyakorlat)*"),
+      Student("támad fejvágással vagy a tempo oldal- vagy hasvágással vagy a tempo fejvágással (lásd 3b gyakorlat)*"),
       Master("kitér és utánvág"),
       Student("igyekszik védeni és visszavágni (esetleg ismételt kitöréssel)"),
     ],
@@ -394,7 +394,7 @@ final Exercise ex7cb = Exercise(
     flow: [
       Master(S.current.szekond_gard),
       Student("szekond-kötés előrelépéssel"),
-      Student("támad fejvágással vagy à tempo oldal- vagy hasvágással vagy à tempo fejvágással (lásd 3b gyakorlat)*"),
+      Student("támad fejvágással vagy a tempo oldal- vagy hasvágással vagy a tempo fejvágással (lásd 3b gyakorlat)*"),
       Master("(ha a tanítvány nagyon lassú, vagy hibásan mozog) elővág és talál"),
     ],
     noteAfter: "* könyv szerint: támad mint fent",
@@ -437,7 +437,7 @@ final Exercise ex7e = Exercise(
     flow: [
       Master(S.current.szekond_gard),
       Student("szekond-kötés előrelépéssel"),
-      Master("támad à tempo (például oldalvágással stb.) és talál"),
+      Master("támad a tempo (például oldalvágással stb.) és talál"),
     ],
     keywords: [
       S.current.rendes_tavolsag,
@@ -546,7 +546,7 @@ final Exercise ex8e = Exercise(
     flow: [
       Master(S.current.szekond_gard),
       Student(S.current.szekond_kotes),
-      Master("támad à tempo és talál"),
+      Master("támad a tempo és talál"),
     ],
     keywords: [
       S.current.rendes_tavolsag,
@@ -606,7 +606,7 @@ final Exercise ex9c = Exercise(
       Student(S.current.szekond_kotes),
       Student(S.current.elore_lep_kvint_invitoval),
       Master("hátra lép szekondban"),
-      Student("támad ugrás-rohammal, tetszés szerinti vágás- vagy szúrással (à tempo úgy, hogy ellenfele másodszor már ne bírjon hátrálni)"),
+      Student("támad ugrás-rohammal, tetszés szerinti vágás- vagy szúrással (a tempo úgy, hogy ellenfele másodszor már ne bírjon hátrálni)"),
     ],
     keywords: [
       S.current.rendes_tavolsag,
@@ -654,7 +654,7 @@ final Exercise ex9db = Exercise(
       Student(S.current.szekond_kotes),
       Student(S.current.elore_lep_kvint_invitoval),
       Master("hátra lép és követi a kvint-invitót kvinttel"),
-      Student("támad (ugrás-rohammal) à tempo (esetleg éppen fejvágással, mely ellen ellenfele állása által látszólag védve van)"),
+      Student("támad (ugrás-rohammal) a tempo (esetleg éppen fejvágással, mely ellen ellenfele állása által látszólag védve van)"),
       Master("igyekszik védeni, ami azonban nem fog mindig sikerülni"),
     ],
     keywords: [
@@ -701,7 +701,7 @@ final Exercise ex10b = Exercise(
       Student(S.current.terc_kotes),
       Student(S.current.elore_lep_kvart_invitoval),
       Master(S.current.megall),
-      Student("támad az invitóból, esetleg à tempo"),
+      Student("támad az invitóból, esetleg a tempo"),
       Master("véd vagy bekapja a támadást"),
     ],
     keywords: [
@@ -722,7 +722,7 @@ final Exercise ex10c = Exercise(
       Student(S.current.terc_kotes),
       Student(S.current.elore_lep_kvart_invitoval),
       Master("hátra lép, esetleg követi az invitót"),
-      Student("támad az invitóból (ugrás-rohammal), esetleg à tempo és talál"),
+      Student("támad az invitóból (ugrás-rohammal), esetleg a tempo és talál"),
     ],
     keywords: [
       S.current.rendes_tavolsag,
@@ -744,7 +744,7 @@ final Exercise ex10d = Exercise(
       Master(S.current.terc_gard),
       Student(S.current.terc_kotes),
       Student(S.current.elore_lep_kvart_invitoval),
-      Master("támad à tempo (mikor ellenfele az invitóba indul, vagyis az 1. ütembe) és talál"),
+      Master("támad a tempo (mikor ellenfele az invitóba indul, vagyis az 1. ütembe) és talál"),
     ],
     keywords: [
       S.current.rendes_tavolsag,
@@ -782,7 +782,7 @@ final Exercise ex10f = Exercise(
       Master(S.current.terc_gard),
       Student(S.current.terc_kotes),
       Student(S.current.elore_lep_kvart_invitoval),
-      Master("a mester hol à tempo támad, hol megáll, hol hátrál, hol meg készakarva késve támad"),
+      Master("a mester hol a tempo támad, hol megáll, hol hátrál, hol meg készakarva késve támad"),
     ],
     keywords: [
       S.current.rendes_tavolsag,
@@ -821,7 +821,7 @@ final Exercise ex11b = Exercise(
       Master(S.current.szekond_gard),
       Student(S.current.szekond_gard),
       Student(S.current.elore_lep_prim_kotessel),
-      Student("támad à tempo és talál"),
+      Student("támad a tempo és talál"),
 
     ],
     keywords: [
@@ -841,7 +841,7 @@ final Exercise ex11c = Exercise(
       Student(S.current.szekond_gard),
       Student(S.current.elore_lep_prim_kotessel),
       Master("hátra lép"),
-      Student("támad (ugrás-rohammal), esetleg à tempo"),
+      Student("támad (ugrás-rohammal), esetleg a tempo"),
       Master("igyekszik védeni és visszavágni"),
     ],
     keywords: [
@@ -862,7 +862,7 @@ final Exercise ex11d = Exercise(
       Master(S.current.szekond_gard),
       Student(S.current.szekond_gard),
       Student(S.current.elore_lep_prim_kotessel),
-      Master("támad a kötésre vagy esetleg ezt megelőzve à tempo"),
+      Master("támad a kötésre vagy esetleg ezt megelőzve a tempo"),
       Student("igyekszik védeni és visszavágni"),
     ],
     keywords: [
@@ -904,7 +904,7 @@ final Exercise ex12b = Exercise(
       Student(S.current.szekond_gard),
       Master(S.current.szekond_kotes),
       Student("előre lép terc- és kvart-invitóval (a jobb és bal láb előrehozását egy-egy pillanattal megelőzve)"),
-      Master("támad à tempo éppen a terc-invitóba, vagy hátrál, vagy hátrál és követi az invitókat, vagy maga is vesz egy invitót, stb. stb."),
+      Master("támad a tempo éppen a terc-invitóba, vagy hátrál, vagy hátrál és követi az invitókat, vagy maga is vesz egy invitót, stb. stb."),
     ],
     keywords: [
       S.current.rendes_tavolsag,
@@ -926,7 +926,7 @@ final Exercise ex13a = Exercise(
       Master(S.current.terc_kotes),
       Student("előre lép kvint-kötéssel és kvart-invitóval (a jobb és bal láb előrehozását egy-egy pillanattal megelőzve)"),
       Master("a kardot mereven a felső vonalban tartja és hátra lép"),
-      Master("előre lép azonnal à tempo (hogy ellenfele egy másodszor ne tudjon hátrálni) kvint-kötéssel és kitör oldal- vagy hasvágással, vagy ha ellenfele mégis hátrálhatott, belső karvágással, éllel vagy fokkal, stb."),
+      Master("előre lép azonnal a tempo (hogy ellenfele egy másodszor ne tudjon hátrálni) kvint-kötéssel és kitör oldal- vagy hasvágással, vagy ha ellenfele mégis hátrálhatott, belső karvágással, éllel vagy fokkal, stb."),
     ],
     keywords: [
       S.current.rendes_tavolsag,
@@ -1007,7 +1007,7 @@ final Exercise ex14a = Exercise(
       Student(S.current.terc_gard),
       Master(S.current.terc_gard),
       Student("előre lép szekond-invitó- és kvart-kötéssel (a jobb és bal láb előrehozását egy-egy pillanattal megelőzve)"),
-      Master("hátra lép és támad ugrás-rohammal, fejvágással vagy à tempo hasvágással, siet terc-gardon át szekondba és hátra lép gyorsan"),
+      Master("hátra lép és támad ugrás-rohammal, fejvágással vagy a tempo hasvágással, siet terc-gardon át szekondba és hátra lép gyorsan"),
       Student("véd kvint- vagy mély kvart-védéssel, előre lép prim-kötéssel és támad kitöréssel testre"),
     ],
     keywords: [
@@ -1038,7 +1038,7 @@ final Exercise ex14b = Exercise(
       Student(S.current.terc_gard),
       Master(S.current.terc_gard),
       Student("előre lép szekond-invitó- és kvart-kötéssel (a jobb és bal láb előrehozását egy-egy pillanattal megelőzve)"),
-      Master("hátra lép és támad à tempo (a kvart-kötésnek kitérve), külső karvágással szögben (hátra kitöréssel) és siet magas tercbe"),
+      Master("hátra lép és támad a tempo (a kvart-kötésnek kitérve), külső karvágással szögben (hátra kitöréssel) és siet magas tercbe"),
       Student("véd (mély) terc-védéssel és visszavág belső karvágást fokkal vagy előre lép kvint-kötéssel és támad kitöréssel testre")
     ],
     keywords: [
@@ -1072,7 +1072,7 @@ final Exercise ex15a = Exercise(
       Master(S.current.szekond_gard),
       Student("előre lép terc-kötéssel"),
       Master("hátra lép, a kardot mereven az alsó vonalban tartja"),
-      Student("támad ugrás-rohammal, prim-kötéssel és alsó egyenes szúrással, vagy lendített fejvágással, esetleg à tempo (oldal- vagy hasvágással)"),
+      Student("támad ugrás-rohammal, prim-kötéssel és alsó egyenes szúrással, vagy lendített fejvágással, esetleg a tempo (oldal- vagy hasvágással)"),
       Master("véd megfelelően, de elmulasztja a visszavágást"),
       Student("ismétli a támadást"),
     ],
@@ -1151,7 +1151,7 @@ final Exercise ex16b = Exercise(
       Master(S.current.szekond_gard),
       Student("előre lép szekond-kötéssel"),
       Master(S.current.elore_lep_prim_kotessel),
-      Student("kitér à tempo és vág vagy szúr"),
+      Student("kitér a tempo és vág vagy szúr"),
     ],
     keywords: [
       S.current.szekond_gard,
@@ -1199,7 +1199,7 @@ final Exercise ex18a = Exercise(
       Master(S.current.terc_gard),
       Student("előre lép és a kardot az alsó vonalban tartja"),
       Master("megáll és szekond-kötést akar venni"),
-      Student("kitér à tempo felső szúrással vagy fejvágással"),
+      Student("kitér a tempo felső szúrással vagy fejvágással"),
     ],
     keywords: [
       S.current.terc_gard,

@@ -163,6 +163,116 @@ class S {
     );
   }
 
+  /// `attacks with a thrust with cavation from above, or with a cut at the head`
+  String get e1_1 {
+    return Intl.message(
+      'attacks with a thrust with cavation from above, or with a cut at the head',
+      name: 'e1_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `parries with a high tierce or quinte parry, and shows a thrust from below`
+  String get e1_2 {
+    return Intl.message(
+      'parries with a high tierce or quinte parry, and shows a thrust from below',
+      name: 'e1_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `rushes - even after a successful hit - through tierce guard to seconde guard`
+  String get e1_3 {
+    return Intl.message(
+      'rushes - even after a successful hit - through tierce guard to seconde guard',
+      name: 'e1_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `if the student transitions to seconde guard incorrectly, attacks back with a cut at the arm from the outside`
+  String get e2_1 {
+    return Intl.message(
+      'if the student transitions to seconde guard incorrectly, attacks back with a cut at the arm from the outside',
+      name: 'e2_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `strives to correct their mistake`
+  String get e2_2 {
+    return Intl.message(
+      'strives to correct their mistake',
+      name: 'e2_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `cuts or thrusts back as fit, but only with a simple riposte`
+  String get e2_3 {
+    return Intl.message(
+      'cuts or thrusts back as fit, but only with a simple riposte',
+      name: 'e2_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `tries to reach the appropriate parry through tierce guard, or if the riposte was late, parries from seconde guard, which they were rushing to`
+  String get e2_4 {
+    return Intl.message(
+      'tries to reach the appropriate parry through tierce guard, or if the riposte was late, parries from seconde guard, which they were rushing to',
+      name: 'e2_4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `cuts at the face from the outside, at the head, or at the arm from above`
+  String get e3_1 {
+    return Intl.message(
+      'cuts at the face from the outside, at the head, or at the arm from above',
+      name: 'e3_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `parries with high tierce or quinte, but earlier than necessary, and binds seconde again`
+  String get e3_2 {
+    return Intl.message(
+      'parries with high tierce or quinte, but earlier than necessary, and binds seconde again',
+      name: 'e3_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `cannot hit, rushes back to seconde guard, and cuts a tempo at the side or to the belly`
+  String get e3_3 {
+    return Intl.message(
+      'cannot hit, rushes back to seconde guard, and cuts a tempo at the side or to the belly',
+      name: 'e3_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `cuts a tempo at the head, right as the master prepares to go to seconde after their premature parry`
+  String get e3_4 {
+    return Intl.message(
+      'cuts a tempo at the head, right as the master prepares to go to seconde after their premature parry',
+      name: 'e3_4',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `straight thrust`
   String get egyenes_szuras {
     return Intl.message(
