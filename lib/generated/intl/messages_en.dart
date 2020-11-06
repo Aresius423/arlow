@@ -22,7 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
     "a_tempo" : MessageLookupByLibrary.simpleMessage("a tempo"),
-    "all" : MessageLookupByLibrary.simpleMessage("All"),
+    "all" : MessageLookupByLibrary.simpleMessage("all"),
     "also_egyenes_szuras" : MessageLookupByLibrary.simpleMessage("straight thrust from below"),
     "also_fokvagas" : MessageLookupByLibrary.simpleMessage("false edge cut from below"),
     "also_karvagas" : MessageLookupByLibrary.simpleMessage("lower cut at the arm"),
@@ -104,7 +104,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "szogvagas" : MessageLookupByLibrary.simpleMessage("angled cut"),
     "szuras" : MessageLookupByLibrary.simpleMessage("thrust"),
     "tamad_valamit" : MessageLookupByLibrary.simpleMessage("makes an attack"),
-    "tech" : MessageLookupByLibrary.simpleMessage("Techniques"),
+    "tech" : MessageLookupByLibrary.simpleMessage("techniques"),
     "terc_gard" : MessageLookupByLibrary.simpleMessage("tierce guard"),
     "terc_invito" : MessageLookupByLibrary.simpleMessage("tierce invito"),
     "terc_kotes" : MessageLookupByLibrary.simpleMessage("tierce bind"),
