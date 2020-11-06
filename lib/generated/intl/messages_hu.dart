@@ -37,6 +37,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "egyenes_szuras" : MessageLookupByLibrary.simpleMessage("egyenes szúrás"),
     "egyszeru_riposzt" : MessageLookupByLibrary.simpleMessage("egyszerű riposzt"),
     "egyszeru_tamadasok" : MessageLookupByLibrary.simpleMessage("az egyszerű támadások és azok elhárítása"),
+    "elore_lep_kvart_invitoval" : MessageLookupByLibrary.simpleMessage("előre lép kvart-invitóval"),
+    "elore_lep_kvint_invitoval" : MessageLookupByLibrary.simpleMessage("előre lép kvint-invitóval"),
+    "elore_lep_prim_kotessel" : MessageLookupByLibrary.simpleMessage("előre lép prim-kötéssel"),
+    "elore_lep_szekond_kotessel" : MessageLookupByLibrary.simpleMessage("előre lép szekond-kötéssel"),
     "elore_lepes" : MessageLookupByLibrary.simpleMessage("előre lépés"),
     "elovagas" : MessageLookupByLibrary.simpleMessage("elővágás"),
     "engedo_prim_vedes" : MessageLookupByLibrary.simpleMessage("engedő prim-védés"),
@@ -79,6 +83,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "magas_terc" : MessageLookupByLibrary.simpleMessage("magas terc"),
     "magas_terc_vedes" : MessageLookupByLibrary.simpleMessage("magas terc védés"),
     "master" : MessageLookupByLibrary.simpleMessage("mester"),
+    "megall" : MessageLookupByLibrary.simpleMessage("megáll"),
+    "megall_vagy_hatra_lep" : MessageLookupByLibrary.simpleMessage("megáll vagy hátra lép"),
     "mellvagas" : MessageLookupByLibrary.simpleMessage("mellvágás"),
     "mely_kvart_vedes" : MessageLookupByLibrary.simpleMessage("mély kvart-védés"),
     "mely_terc_vedes" : MessageLookupByLibrary.simpleMessage("mély terc-védés"),
@@ -97,6 +103,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "szekond_vedes" : MessageLookupByLibrary.simpleMessage("szekond-védés"),
     "szogvagas" : MessageLookupByLibrary.simpleMessage("szögvágás"),
     "szuras" : MessageLookupByLibrary.simpleMessage("szúrás"),
+    "tamad_valamit" : MessageLookupByLibrary.simpleMessage("támad valamit"),
     "tech" : MessageLookupByLibrary.simpleMessage("technikák"),
     "terc_gard" : MessageLookupByLibrary.simpleMessage("terc gard"),
     "terc_invito" : MessageLookupByLibrary.simpleMessage("terc invito"),
@@ -105,6 +112,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "title" : MessageLookupByLibrary.simpleMessage("Arlow gyakorlatok"),
     "ugras_roham" : MessageLookupByLibrary.simpleMessage("ugrás-roham"),
     "utanvagas" : MessageLookupByLibrary.simpleMessage("utánvágás"),
-    "vagas" : MessageLookupByLibrary.simpleMessage("vágás")
+    "vagas" : MessageLookupByLibrary.simpleMessage("vágás"),
+    "ved_es_visszavag" : MessageLookupByLibrary.simpleMessage("véd és visszavág")
   };
 }

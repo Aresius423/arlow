@@ -84,5 +84,13 @@
   "ismetelt_tamadas": "ismételt támadás",
   "ismetelt_roham": "ismételt roham",
   "also_fokvagas": "alsó fokvágás",
-  "hatra_ugras": "hátra ugrás"
+  "hatra_ugras": "hátra ugrás",
+  "megall": "megáll",
+  "megall_vagy_hatra_lep": "megáll vagy hátra lép",
+  "tamad_valamit": "támad valamit",
+  "ved_es_visszavag": "véd és visszavág",
+  "elore_lep_prim_kotessel": "előre lép prim-kötéssel",
+  "elore_lep_szekond_kotessel": "előre lép szekond-kötéssel",
+  "elore_lep_kvint_invitoval": "előre lép kvint-invitóval",
+  "elore_lep_kvart_invitoval": "előre lép kvart-invitóval"
 }

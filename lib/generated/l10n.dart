@@ -63,200 +63,200 @@ class S {
     );
   }
 
-  /// `közép távolság`
+  /// `middle distance`
   String get kozep_tavolsag {
     return Intl.message(
-      'közép távolság',
+      'middle distance',
       name: 'kozep_tavolsag',
       desc: '',
       args: [],
     );
   }
 
-  /// `szekond-gard`
+  /// `seconde guard`
   String get szekond_gard {
     return Intl.message(
-      'szekond-gard',
+      'seconde guard',
       name: 'szekond_gard',
       desc: '',
       args: [],
     );
   }
 
-  /// `szekond-kötés`
+  /// `seconde bind`
   String get szekond_kotes {
     return Intl.message(
-      'szekond-kötés',
+      'seconde bind',
       name: 'szekond_kotes',
       desc: '',
       args: [],
     );
   }
 
-  /// `Mindenkor a szekond-gardba sietünk, ha a visszavágás elmaradt, hacsak ismételten nem támadunk.`
+  /// `We rush to seconde guard at all times if the opponent fails to riposte, unless we repeat the attack.`
   String get note_ex_1 {
     return Intl.message(
-      'Mindenkor a szekond-gardba sietünk, ha a visszavágás elmaradt, hacsak ismételten nem támadunk.',
+      'We rush to seconde guard at all times if the opponent fails to riposte, unless we repeat the attack.',
       name: 'note_ex_1',
       desc: '',
       args: [],
     );
   }
 
-  /// `szúrás`
+  /// `thrust`
   String get szuras {
     return Intl.message(
-      'szúrás',
+      'thrust',
       name: 'szuras',
       desc: '',
       args: [],
     );
   }
 
-  /// `felső szúrás`
+  /// `thrust from above`
   String get felso_szuras {
     return Intl.message(
-      'felső szúrás',
+      'thrust from above',
       name: 'felso_szuras',
       desc: '',
       args: [],
     );
   }
 
-  /// `felső kitérő szúrás`
+  /// `thrust with cavation from above`
   String get felso_kitero_szuras {
     return Intl.message(
-      'felső kitérő szúrás',
+      'thrust with cavation from above',
       name: 'felso_kitero_szuras',
       desc: '',
       args: [],
     );
   }
 
-  /// `fejvágás`
+  /// `cut at the head`
   String get fejvagas {
     return Intl.message(
-      'fejvágás',
+      'cut at the head',
       name: 'fejvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `magas terc védés`
+  /// `high tierce parry`
   String get magas_terc_vedes {
     return Intl.message(
-      'magas terc védés',
+      'high tierce parry',
       name: 'magas_terc_vedes',
       desc: '',
       args: [],
     );
   }
 
-  /// `kvint védés`
+  /// `quinte parry`
   String get kvint_vedes {
     return Intl.message(
-      'kvint védés',
+      'quinte parry',
       name: 'kvint_vedes',
       desc: '',
       args: [],
     );
   }
 
-  /// `alsó szúrás`
+  /// `thrust from below`
   String get also_szuras {
     return Intl.message(
-      'alsó szúrás',
+      'thrust from below',
       name: 'also_szuras',
       desc: '',
       args: [],
     );
   }
 
-  /// `terc gard`
+  /// `tierce guard`
   String get terc_gard {
     return Intl.message(
-      'terc gard',
+      'tierce guard',
       name: 'terc_gard',
       desc: '',
       args: [],
     );
   }
 
-  /// `folytatás`
+  /// `continuation`
   String get folytatas {
     return Intl.message(
-      'folytatás',
+      'continuation',
       name: 'folytatas',
       desc: '',
       args: [],
     );
   }
 
-  /// `külső karvágás`
+  /// `cut at the arm from the outside`
   String get kulso_karvagas {
     return Intl.message(
-      'külső karvágás',
+      'cut at the arm from the outside',
       name: 'kulso_karvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `vágás`
+  /// `cut`
   String get vagas {
     return Intl.message(
-      'vágás',
+      'cut',
       name: 'vagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `riposzt`
+  /// `riposte`
   String get riposzt {
     return Intl.message(
-      'riposzt',
+      'riposte',
       name: 'riposzt',
       desc: '',
       args: [],
     );
   }
 
-  /// `egyszerű riposzt`
+  /// `simple riposte`
   String get egyszeru_riposzt {
     return Intl.message(
-      'egyszerű riposzt',
+      'simple riposte',
       name: 'egyszeru_riposzt',
       desc: '',
       args: [],
     );
   }
 
-  /// `külső arcvágás`
+  /// `cut at the face from the outside`
   String get kulso_arcvagas {
     return Intl.message(
-      'külső arcvágás',
+      'cut at the face from the outside',
       name: 'kulso_arcvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `felső karvágás`
+  /// `cut at the arm from above`
   String get felso_karvagas {
     return Intl.message(
-      'felső karvágás',
+      'cut at the arm from above',
       name: 'felso_karvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `terc védés`
+  /// `tierce parry`
   String get terc_vedes {
     return Intl.message(
-      'terc védés',
+      'tierce parry',
       name: 'terc_vedes',
       desc: '',
       args: [],
@@ -273,60 +273,60 @@ class S {
     );
   }
 
-  /// `oldalvágás`
+  /// `cut at the side`
   String get oldalvagas {
     return Intl.message(
-      'oldalvágás',
+      'cut at the side',
       name: 'oldalvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `hasvágás`
+  /// `cut at the belly`
   String get hasvagas {
     return Intl.message(
-      'hasvágás',
+      'cut at the belly',
       name: 'hasvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `lépés-roham`
+  /// `pattinato`
   String get lepes_roham {
     return Intl.message(
-      'lépés-roham',
+      'pattinato',
       name: 'lepes_roham',
       desc: '',
       args: [],
     );
   }
 
-  /// `ugrás-roham`
+  /// `balestra`
   String get ugras_roham {
     return Intl.message(
-      'ugrás-roham',
+      'balestra',
       name: 'ugras_roham',
       desc: '',
       args: [],
     );
   }
 
-  /// `az egyszerű támadások és azok elhárítása`
+  /// `Simple attacks and parrying them`
   String get egyszeru_tamadasok {
     return Intl.message(
-      'az egyszerű támadások és azok elhárítása',
+      'Simple attacks and parrying them',
       name: 'egyszeru_tamadasok',
       desc: '',
       args: [],
     );
   }
 
-  /// `rendes távolság`
+  /// `normal distance`
   String get rendes_tavolsag {
     return Intl.message(
-      'rendes távolság',
+      'normal distance',
       name: 'rendes_tavolsag',
       desc: '',
       args: [],
@@ -343,120 +343,120 @@ class S {
     );
   }
 
-  /// `terc kötés`
+  /// `tierce bind`
   String get terc_kotes {
     return Intl.message(
-      'terc kötés',
+      'tierce bind',
       name: 'terc_kotes',
       desc: '',
       args: [],
     );
   }
 
-  /// `terc invito`
+  /// `tierce invito`
   String get terc_invito {
     return Intl.message(
-      'terc invito',
+      'tierce invito',
       name: 'terc_invito',
       desc: '',
       args: [],
     );
   }
 
-  /// `fokvágás`
+  /// `false edge cut`
   String get fokvagas {
     return Intl.message(
-      'fokvágás',
+      'false edge cut',
       name: 'fokvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `belső fokvágás`
+  /// `false edge cut from the inside`
   String get belso_fokvagas {
     return Intl.message(
-      'belső fokvágás',
+      'false edge cut from the inside',
       name: 'belso_fokvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `kitörés`
+  /// `lunge`
   String get kitores {
     return Intl.message(
-      'kitörés',
+      'lunge',
       name: 'kitores',
       desc: '',
       args: [],
     );
   }
 
-  /// `kitérés`
+  /// `cavation`
   String get kiteres {
     return Intl.message(
-      'kitérés',
+      'cavation',
       name: 'kiteres',
       desc: '',
       args: [],
     );
   }
 
-  /// `utánvágás`
+  /// `afterblow`
   String get utanvagas {
     return Intl.message(
-      'utánvágás',
+      'afterblow',
       name: 'utanvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `szögvágás`
+  /// `angled cut`
   String get szogvagas {
     return Intl.message(
-      'szögvágás',
+      'angled cut',
       name: 'szogvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `alsó karvágás`
+  /// `lower cut at the arm`
   String get also_karvagas {
     return Intl.message(
-      'alsó karvágás',
+      'lower cut at the arm',
       name: 'also_karvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `hátra kitörés`
+  /// `reverse lunge`
   String get hatra_kitores {
     return Intl.message(
-      'hátra kitörés',
+      'reverse lunge',
       name: 'hatra_kitores',
       desc: '',
       args: [],
     );
   }
 
-  /// `mellvágás`
+  /// `cut at the chest`
   String get mellvagas {
     return Intl.message(
-      'mellvágás',
+      'cut at the chest',
       name: 'mellvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `hátra lépés`
+  /// `step back`
   String get hatra_lepes {
     return Intl.message(
-      'hátra lépés',
+      'step back',
       name: 'hatra_lepes',
       desc: '',
       args: [],
@@ -493,391 +493,471 @@ class S {
     );
   }
 
-  /// `coupé lendítés`
+  /// `coupé swing`
   String get coupe_lendites {
     return Intl.message(
-      'coupé lendítés',
+      'coupé swing',
       name: 'coupe_lendites',
       desc: '',
       args: [],
     );
   }
 
-  /// `coupé fejvágás`
+  /// `coupé cut at the head`
   String get coupe_fejvagas {
     return Intl.message(
-      'coupé fejvágás',
+      'coupé cut at the head',
       name: 'coupe_fejvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `elővágás`
+  /// `vorhieb`
   String get elovagas {
     return Intl.message(
-      'elővágás',
+      'vorhieb',
       name: 'elovagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `karvágás`
+  /// `cut at the arm`
   String get karvagas {
     return Intl.message(
-      'karvágás',
+      'cut at the arm',
       name: 'karvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `belső karvágás`
+  /// `inner cut at the arm`
   String get belso_karvagas {
     return Intl.message(
-      'belső karvágás',
+      'inner cut at the arm',
       name: 'belso_karvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `arcvágás`
+  /// `cut at the face`
   String get arcvagas {
     return Intl.message(
-      'arcvágás',
+      'cut at the face',
       name: 'arcvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `roham`
+  /// `charge`
   String get roham {
     return Intl.message(
-      'roham',
+      'charge',
       name: 'roham',
       desc: '',
       args: [],
     );
   }
 
-  /// `kötés előrelépéssel`
+  /// `forward step with bind`
   String get kotes_elorelepessel {
     return Intl.message(
-      'kötés előrelépéssel',
+      'forward step with bind',
       name: 'kotes_elorelepessel',
       desc: '',
       args: [],
     );
   }
 
-  /// `ismételt kitörés`
+  /// `repeated lunge`
   String get ismetelt_kitores {
     return Intl.message(
-      'ismételt kitörés',
+      'repeated lunge',
       name: 'ismetelt_kitores',
       desc: '',
       args: [],
     );
   }
 
-  /// `kötött szúrás`
+  /// `thrust with bind`
   String get kotott_szuras {
     return Intl.message(
-      'kötött szúrás',
+      'thrust with bind',
       name: 'kotott_szuras',
       desc: '',
       args: [],
     );
   }
 
-  /// `felső kötött szúrás`
+  /// `upper line thrust with bind`
   String get felso_kotott_szuras {
     return Intl.message(
-      'felső kötött szúrás',
+      'upper line thrust with bind',
       name: 'felso_kotott_szuras',
       desc: '',
       args: [],
     );
   }
 
-  /// `kitérő szúrás`
+  /// `thrust with cavation`
   String get kitero_szuras {
     return Intl.message(
-      'kitérő szúrás',
+      'thrust with cavation',
       name: 'kitero_szuras',
       desc: '',
       args: [],
     );
   }
 
-  /// `prim-védés`
+  /// `prime parry`
   String get prim_vedes {
     return Intl.message(
-      'prim-védés',
+      'prime parry',
       name: 'prim_vedes',
       desc: '',
       args: [],
     );
   }
 
-  /// `engedő védés`
+  /// `ceding parry`
   String get engedo_vedes {
     return Intl.message(
-      'engedő védés',
+      'ceding parry',
       name: 'engedo_vedes',
       desc: '',
       args: [],
     );
   }
 
-  /// `engedő prim védés`
+  /// `ceding prime parry`
   String get engedo_prim_vedes {
     return Intl.message(
-      'engedő prim védés',
+      'ceding prime parry',
       name: 'engedo_prim_vedes',
       desc: '',
       args: [],
     );
   }
 
-  /// `szekond-védés`
+  /// `seconde parry`
   String get szekond_vedes {
     return Intl.message(
-      'szekond-védés',
+      'seconde parry',
       name: 'szekond_vedes',
       desc: '',
       args: [],
     );
   }
 
-  /// `mély kvart-védés`
+  /// `low quarte parry`
   String get mely_kvart_vedes {
     return Intl.message(
-      'mély kvart-védés',
+      'low quarte parry',
       name: 'mely_kvart_vedes',
       desc: '',
       args: [],
     );
   }
 
-  /// `körvédés`
+  /// `contro-parade`
   String get korvedes {
     return Intl.message(
-      'körvédés',
+      'contro-parade',
       name: 'korvedes',
       desc: '',
       args: [],
     );
   }
 
-  /// `körterc-védés`
+  /// `tierce contro-parade`
   String get korterc_vedes {
     return Intl.message(
-      'körterc-védés',
+      'tierce contro-parade',
       name: 'korterc_vedes',
       desc: '',
       args: [],
     );
   }
 
-  /// `kvint invito`
+  /// `quinte invito`
   String get kvint_invito {
     return Intl.message(
-      'kvint invito',
+      'quinte invito',
       name: 'kvint_invito',
       desc: '',
       args: [],
     );
   }
 
-  /// `kvart invito`
+  /// `quarte invito`
   String get kvart_invito {
     return Intl.message(
-      'kvart invito',
+      'quarte invito',
       name: 'kvart_invito',
       desc: '',
       args: [],
     );
   }
 
-  /// `prim-kötés`
+  /// `prime bind`
   String get prim_kotes {
     return Intl.message(
-      'prim-kötés',
+      'prime bind',
       name: 'prim_kotes',
       desc: '',
       args: [],
     );
   }
 
-  /// `egyenes szúrás`
+  /// `straight thrust`
   String get egyenes_szuras {
     return Intl.message(
-      'egyenes szúrás',
+      'straight thrust',
       name: 'egyenes_szuras',
       desc: '',
       args: [],
     );
   }
 
-  /// `kvart-védés`
+  /// `quarte parry`
   String get kvart_vedes {
     return Intl.message(
-      'kvart-védés',
+      'quarte parry',
       name: 'kvart_vedes',
       desc: '',
       args: [],
     );
   }
 
-  /// `kvint-kötés`
+  /// `quinte bind`
   String get kvint_kotes {
     return Intl.message(
-      'kvint-kötés',
+      'quinte bind',
       name: 'kvint_kotes',
       desc: '',
       args: [],
     );
   }
 
-  /// `felső vonal`
+  /// `upper line`
   String get felso_vonal {
     return Intl.message(
-      'felső vonal',
+      'upper line',
       name: 'felso_vonal',
       desc: '',
       args: [],
     );
   }
 
-  /// `előre lépés`
+  /// `step forward`
   String get elore_lepes {
     return Intl.message(
-      'előre lépés',
+      'step forward',
       name: 'elore_lepes',
       desc: '',
       args: [],
     );
   }
 
-  /// `külső vágás`
+  /// `cut from the outside`
   String get kulso_vagas {
     return Intl.message(
-      'külső vágás',
+      'cut from the outside',
       name: 'kulso_vagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `szekond invito`
+  /// `seconde invito`
   String get szekond_invito {
     return Intl.message(
-      'szekond invito',
+      'seconde invito',
       name: 'szekond_invito',
       desc: '',
       args: [],
     );
   }
 
-  /// `kvart-kötés`
+  /// `quarte bind`
   String get kvart_kotes {
     return Intl.message(
-      'kvart-kötés',
+      'quarte bind',
       name: 'kvart_kotes',
       desc: '',
       args: [],
     );
   }
 
-  /// `magas terc`
+  /// `high tierce`
   String get magas_terc {
     return Intl.message(
-      'magas terc',
+      'high tierce',
       name: 'magas_terc',
       desc: '',
       args: [],
     );
   }
 
-  /// `mély terc-védés`
+  /// `low tierce parry`
   String get mely_terc_vedes {
     return Intl.message(
-      'mély terc-védés',
+      'low tierce parry',
       name: 'mely_terc_vedes',
       desc: '',
       args: [],
     );
   }
 
-  /// `alsó vonal`
+  /// `lower line`
   String get also_vonal {
     return Intl.message(
-      'alsó vonal',
+      'lower line',
       name: 'also_vonal',
       desc: '',
       args: [],
     );
   }
 
-  /// `alsó egyenes szúrás`
+  /// `straight thrust from below`
   String get also_egyenes_szuras {
     return Intl.message(
-      'alsó egyenes szúrás',
+      'straight thrust from below',
       name: 'also_egyenes_szuras',
       desc: '',
       args: [],
     );
   }
 
-  /// `lendített fejvágás`
+  /// `swung cut at the head`
   String get lenditett_fejvagas {
     return Intl.message(
-      'lendített fejvágás',
+      'swung cut at the head',
       name: 'lenditett_fejvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `ismételt támadás`
+  /// `repeated attack`
   String get ismetelt_tamadas {
     return Intl.message(
-      'ismételt támadás',
+      'repeated attack',
       name: 'ismetelt_tamadas',
       desc: '',
       args: [],
     );
   }
 
-  /// `ismételt roham`
+  /// `repeated charge`
   String get ismetelt_roham {
     return Intl.message(
-      'ismételt roham',
+      'repeated charge',
       name: 'ismetelt_roham',
       desc: '',
       args: [],
     );
   }
 
-  /// `alsó fokvágás`
+  /// `false edge cut from below`
   String get also_fokvagas {
     return Intl.message(
-      'alsó fokvágás',
+      'false edge cut from below',
       name: 'also_fokvagas',
       desc: '',
       args: [],
     );
   }
 
-  /// `hátra ugrás`
+  /// `jump back`
   String get hatra_ugras {
     return Intl.message(
-      'hátra ugrás',
+      'jump back',
       name: 'hatra_ugras',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `stops`
+  String get megall {
+    return Intl.message(
+      'stops',
+      name: 'megall',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `stops or takes a step back`
+  String get megall_vagy_hatra_lep {
+    return Intl.message(
+      'stops or takes a step back',
+      name: 'megall_vagy_hatra_lep',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `makes an attack`
+  String get tamad_valamit {
+    return Intl.message(
+      'makes an attack',
+      name: 'tamad_valamit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `parries and attacks back`
+  String get ved_es_visszavag {
+    return Intl.message(
+      'parries and attacks back',
+      name: 'ved_es_visszavag',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `steps forward with a prime bind`
+  String get elore_lep_prim_kotessel {
+    return Intl.message(
+      'steps forward with a prime bind',
+      name: 'elore_lep_prim_kotessel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `steps forward with a seconde bind`
+  String get elore_lep_szekond_kotessel {
+    return Intl.message(
+      'steps forward with a seconde bind',
+      name: 'elore_lep_szekond_kotessel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `steps forward with a quinte invito`
+  String get elore_lep_kvint_invitoval {
+    return Intl.message(
+      'steps forward with a quinte invito',
+      name: 'elore_lep_kvint_invitoval',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `steps forward with a quarte invito`
+  String get elore_lep_kvart_invitoval {
+    return Intl.message(
+      'steps forward with a quarte invito',
+      name: 'elore_lep_kvart_invitoval',
       desc: '',
       args: [],
     );
