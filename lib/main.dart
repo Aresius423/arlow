@@ -73,25 +73,10 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(S.current.title),
           actions: <Widget>[
             LanguagePickerWidget(locale),
-            PopupMenuButton<String>(
-              onSelected: (String value) => handleMore(value, context),
-              itemBuilder: (BuildContext context) {
-                return {'Lorem', 'Ipsum'}.map((String choice) {
-                  return PopupMenuItem<String>(
-                    value: choice,
-                    child: Text(choice),
-                  );
-                }).toList();
-              },
-            )
           ]
         ),
         body: Menu(chapters),
       )
     );
   }
-}
-
-void handleMore(String value, BuildContext context) {
-
 }
