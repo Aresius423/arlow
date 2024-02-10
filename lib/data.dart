@@ -1,7 +1,7 @@
 import 'package:arlow/languageSettings.dart';
 import 'objects.dart';
 
-List<Chapter> makeChapterData() => [aTempo(), egyszeruTamadasok()];
+List<Chapter> makeChapterData() => [aTempo(), egyszeruTamadasok(), altamadasok()];
 
 Chapter aTempo() => Chapter(
   title: "A tempo",
@@ -1278,5 +1278,187 @@ Exercise ex19() => Exercise(
       S.hatra_ugras,
       S.ismetelt_tamadas,
       S.ismetelt_roham,
+    ]
+);
+
+// ___________________________
+// AZ EGYSZERŰ TÁMADÁSOK ÉS AZOK ELHÁRÍTÁSA
+// ___________________________
+
+Chapter altamadasok() => Chapter(
+  title: S.altamadasok,
+  exercises: [
+    ex89a(), ex89b(),
+    ex90a(), ex90b(), ex90c(),
+    ex91a(), ex91b(),
+  ]
+);
+
+Exercise ex89a() => Exercise(
+    title: "89a",
+    noteBefore: S.rendes_tavolsag,
+    flow: [
+      Student(S.terc_gard),
+      Master(S.terc_kotes),
+      Student(S.altamadas),
+      Student(S.csel_fej),
+      Master(S.e89_1),
+      Student(S.e89_2),
+      Student(S.e89_3),
+    ],
+    keywords: [
+      S.rendes_tavolsag,
+      S.terc_gard,
+      S.terc_kotes,
+      S.roham,
+      S.elovagas,
+      S.hatra_kitores,
+      S.hatra_ugras,
+      S.kiteres,
+      S.riposzt,
+      S.altamadas,
+      S.cseltamadas,
+    ]
+);
+
+Exercise ex89b() => Exercise(
+    title: "89b",
+    noteBefore: S.rendes_tavolsag,
+    flow: [
+      Student(S.szekond_gard),
+      Master(S.terc_invito),
+      Student(S.altamadas),
+      Student(S.csel_fej),
+      Master(S.e89_1),
+      Student(S.e89_2),
+      Student(S.e89_4),
+    ],
+    keywords: [
+      S.rendes_tavolsag,
+      S.szekond_gard,
+      S.terc_invito,
+      S.roham,
+      S.elovagas,
+      S.hatra_kitores,
+      S.hatra_ugras,
+      S.ismetelt_tamadas,
+      S.ismetelt_roham,
+      S.kiteres,
+      S.altamadas,
+      S.cseltamadas,
+    ]
+);
+
+Exercise ex90a() => Exercise(
+    title: "90b",
+    noteBefore: S.rendes_tavolsag,
+    flow: [
+      Student(S.szekond_gard),
+      Master(S.szekond_kotes),
+      Student(S.altamadas),
+      Student(S.e90_1),
+      Master(S.e90_2),
+      Student(S.e90_3),
+      Student(S.e90_4),
+    ],
+    keywords: [
+      S.rendes_tavolsag,
+      S.szekond_gard,
+      S.szekond_kotes,
+      S.roham,
+      S.elovagas,
+      S.hatra_kitores,
+      S.hatra_ugras,
+      S.riposzt,
+    ]
+);
+
+Exercise ex90b() => Exercise(
+    title: "90c",
+    noteBefore: S.rendes_tavolsag,
+    flow: [
+      Student(S.szekond_gard),
+      Master(S.szekond_kotes),
+      Student(S.altamadas),
+      Student(S.e90_1),
+      Master(S.e90_2),
+      Student(S.e90_3),
+      Student(S.e90_5),
+    ],
+    keywords: [
+      S.rendes_tavolsag,
+      S.szekond_gard,
+      S.szekond_kotes,
+      S.roham,
+      S.elovagas,
+      S.hatra_kitores,
+      S.hatra_ugras,
+      S.ismetelt_tamadas,
+      S.ismetelt_kitores,
+    ]
+);
+
+Exercise ex90c() => Exercise(
+    title: "90a",
+    noteBefore: S.rendes_tavolsag,
+    flow: [
+      Student(S.terc_gard),
+      Master(S.szekond_invito),
+      Student(S.altamadas),
+      Student(S.e90_1),
+      Master(S.e90_2),
+      Student(S.e90_3),
+      Student(S.e90_6),
+    ],
+    keywords: [
+      S.rendes_tavolsag,
+      S.terc_gard,
+      S.szekond_invito,
+      S.roham,
+      S.elovagas,
+      S.hatra_kitores,
+      S.hatra_ugras,
+      S.ismetelt_roham,
+    ]
+);
+
+Exercise ex91a() => Exercise(
+    title: "91a",
+    noteBefore: S.rendes_tavolsag,
+    flow: [
+      Student(S.terc_gard),
+      Master(S.terc_kotes),
+      Student(S.altamadas),
+      Student(S.e91_1),
+      Master(S.e91_2),
+      Student(S.e91_3),
+    ],
+    keywords: [
+      S.rendes_tavolsag,
+      S.terc_gard,
+      S.terc_kotes,
+      S.elovagas,
+      S.riposzt,
+    ]
+);
+
+Exercise ex91b() => Exercise(
+    title: "91b",
+    noteBefore: S.rendes_tavolsag,
+    flow: [
+      Student(S.terc_gard),
+      Master(S.terc_kotes),
+      Student(S.altamadas),
+      Student(S.e91_1),
+      Master(S.e91_4),
+      Student(S.e91_5),
+    ],
+    keywords: [
+      S.rendes_tavolsag,
+      S.terc_gard,
+      S.terc_kotes,
+      S.elovagas,
+      S.riposzt,
+      S.korvedes,
     ]
 );
