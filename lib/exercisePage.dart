@@ -1,7 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:arlow/languageSettings.dart';
 
-import 'generated/l10n.dart';
 import 'objects.dart';
 import 'styles.dart';
 
@@ -21,9 +20,9 @@ class ExercisePage extends StatelessWidget {
         padding: const EdgeInsets.all(8),
         child: Row(
           children: <Widget>[
-            Text(S.current.master, style: Theme.of(context).textTheme.headline6),
+            Text(S.master, style: Theme.of(context).textTheme.titleLarge),
             Expanded(child: Text("")),
-            Text(S.current.student, style: Theme.of(context).textTheme.headline6),
+            Text(S.student, style: Theme.of(context).textTheme.titleLarge),
           ],
         ),
       ),

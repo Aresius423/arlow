@@ -7,7 +7,7 @@ import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'data.dart';
-import 'generated/l10n.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:intl/intl.dart';
 
 import 'objects.dart';
@@ -18,8 +18,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   LanguageSettings.sharedPreferences = await SharedPreferences.getInstance();
   locale = LanguageSettings.getStoredLocale();
-
-  await S.load(Locale(locale, ''));
+  S = await AppLocalizations.delegate.load(Locale(locale, ''));
   Intl.defaultLocale = locale;
 
   runApp(
@@ -30,6 +29,8 @@ void main() async {
 }
 
 class MyApp extends StatefulWidget {
+  MyApp();
+
   @override
   State<StatefulWidget> createState() => _MyAppState();
 }
@@ -38,20 +39,23 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: S.current.title,
+      title: S.title,
       theme: mainThemeData,
-      home: MyHomePage(),
+      home: MyHomePage(S),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
+  final AppLocalizations S;
+  MyHomePage(this.S);
+
   @override
   State<StatefulWidget> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<Chapter> chapters;
+  late List<Chapter> chapters;
 
   @override
   Widget build(BuildContext context) {
@@ -59,18 +63,18 @@ class _MyHomePageState extends State<MyHomePage> {
     chapters = makeChapterData();
 
     return MaterialApp(
-      title: S.current.title,
+      title: widget.S.title,
       theme: mainThemeData,
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      supportedLocales: S.delegate.supportedLocales,
+      supportedLocales: AppLocalizations.supportedLocales,
       home: Scaffold(
         appBar: AppBar(
           elevation: 5,
-          title: Text(S.current.title),
+          title: Text(widget.S.title),
           actions: <Widget>[
             LanguagePickerWidget(locale),
           ]

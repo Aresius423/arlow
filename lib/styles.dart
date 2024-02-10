@@ -11,14 +11,20 @@ abstract class Colours {
   static const studentColor = Color(0xFFD6C243);
 }
 
-final ThemeData mainThemeData = ThemeData(
+final ThemeData td = ThemeData(
   primaryColor: Colours.primaryColour,
   primaryColorDark: Colours.primaryColorDark,
   primaryColorLight: Colours.primaryColorLight,
-  accentColor: Colours.accentColor,
   visualDensity: VisualDensity.adaptivePlatformDensity,
   scaffoldBackgroundColor: Colours.primaryColorLight,
-  backgroundColor: Colours.primaryColorLight,
   dividerColor: Colors.transparent,
   canvasColor: Colours.primaryColorLight,
 );
+
+final ThemeData mainThemeData = td.copyWith(
+  colorScheme: td.colorScheme.copyWith(
+    background: Colours.primaryColorLight,
+    secondary: Colours.accentColor,
+  ),
+);
+

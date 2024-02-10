@@ -1,8 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:arlow/languageSettings.dart';
 
 import 'exercisePicker.dart';
-import 'generated/l10n.dart';
 
 class Menu extends StatelessWidget{
   final chapters;
@@ -19,8 +18,8 @@ class Menu extends StatelessWidget{
             elevation: 5,
             bottom: TabBar(
               tabs: [
-                Tab(text: S.current.all),
-                Tab(text: S.current.tech),
+                Tab(text: S.all),
+                Tab(text: S.tech),
               ]
             ),
           ),

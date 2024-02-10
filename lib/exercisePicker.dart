@@ -1,6 +1,4 @@
-import 'package:arlow/data.dart';
 import 'package:arlow/styles.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'exercisePage.dart';
@@ -28,7 +26,7 @@ List<Widget> makeChapters(BuildContext context, List<Chapter> data) {
         child: Center(
           child: Text(
             chapter.title,
-            style: Theme.of(context).textTheme.headline6
+            style: Theme.of(context).textTheme.titleLarge
           )
         ),
       ),
@@ -63,7 +61,7 @@ Widget makeExerciseButton(BuildContext context, Exercise exercise) {
         child: Center(
           child: Text(
             exercise.title,
-            style: Theme.of(context).textTheme.headline5,
+            style: Theme.of(context).textTheme.headlineSmall,
           )
         )
       )

@@ -4,7 +4,7 @@ class Chapter {
   String title;
   List<Exercise> exercises;
 
-  Chapter({@required this.title, this.exercises = const []});
+  Chapter({required this.title, this.exercises = const []});
 
   Chapter filterKeyword(String tech) {
     return Chapter(
@@ -21,7 +21,7 @@ class Exercise {
   String noteAfter;
   List<String> keywords;
 
-  Exercise({@required this.title, this.noteBefore = "", this.flow = const [], this.noteAfter = "", this.keywords = const []});
+  Exercise({required this.title, this.noteBefore = "", this.flow = const [], this.noteAfter = "", this.keywords = const []});
 }
 
 class FlowElement {
