@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
+import 'package:diacritic/diacritic.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 
 import 'package:arlow/data/glossaryData.dart';
@@ -14,7 +15,8 @@ class Glossary extends StatefulWidget {
 
 List<Widget> makeGlossary(BuildContext context) {
   return (glossaryItems().entries.toList()
-        ..sort((a, b) => a.key.compareTo(b.key)))
+        ..sort((a, b) => removeDiacritics(a.key.toLowerCase())
+            .compareTo(removeDiacritics(b.key.toLowerCase()))))
       .map((item) {
     return Padding(
         padding: const EdgeInsets.all(8.0),
@@ -27,9 +29,12 @@ List<Widget> makeGlossary(BuildContext context) {
                   builder: (context, snapshot) {
                     return Scaffold(
                       appBar: AppBar(
-                        title: Text("${item.key[0].toUpperCase()}${item.key.substring(1)}"),
+                        title: Text(
+                            "${item.key[0].toUpperCase()}${item.key.substring(1)}"),
                       ),
-                      body: Markdown(data: snapshot.data ?? 'FAIL'),
+                      body: Markdown(
+                          data: snapshot.data ??
+                              'Failed to load glossary asset: ${item.value}'),
                     );
                   }),
             ));

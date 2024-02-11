@@ -14,7 +14,7 @@ Chapter aTempo() => Chapter(
 
 Exercise ex1() => Exercise(
   title: "1",
-  noteBefore: S.kozep_tavolsag,
+  noteBefore: S.kozeptavolsag,
   flow: [
     Student(S.szekond_gard),
     Master(S.szekond_kotes),

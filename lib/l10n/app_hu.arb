@@ -193,9 +193,9 @@
   "feltarto_szuras": "feltartó szúrás",
   "fokvagas": "fokvágás",
   "folytatas": "folytatás",
-  "gard": "Gard",
-  "gard_szekond": "Gard (szekond)",
-  "gard_terc": "Gard (terc)",
+  "gard": "gard",
+  "gard_szekond": "gard (szekond)",
+  "gard_terc": "gard (terc)",
   "glossary": "szójegyzék",
   "hasvagas": "hasvágás",
   "hatra_kitores": "hátra kitörés",
@@ -209,6 +209,7 @@
   "ismetelt_tamadas": "ismételt támadás",
   "ismetli_a_tamadast": "ismétli a támadást",
   "karvagas": "karvágás",
+  "kezallas": "kézállás",
   "kiteres": "kitérés",
   "kitero_szuras": "kitérő szúrás",
   "kitores": "kitörés",
@@ -217,7 +218,7 @@
   "kotes_elorelepessel": "kötés előrelépéssel",
   "kotott_szuras": "kötött szúrás",
   "kozbetamadas": "közbetámadás",
-  "kozep_tavolsag": "közép távolság",
+  "kozeptavolsag": "középtávolság",
   "kulso_arcvagas": "külső arcvágás",
   "kulso_karvagas": "külső karvágás",
   "kulso_vagas": "külső vágás",
@@ -273,5 +274,6 @@
   "ved_es_visszavag": "véd és visszavág",
   "ved_megfeleloen_es_visszavag": "véd megfelelően és visszavág",
   "ved_szekonddal_es_visszavag": "véd szekonddal és visszavág",
-  "visszavag": "visszavág"
+  "visszavag": "visszavág",
+  "zart_tavolsag": "zárt távolság"
 }
