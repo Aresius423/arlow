@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:arlow/languageSettings.dart';
 import 'package:arlow/exercisePicker.dart';
+import 'package:arlow/glossary.dart';
 
 class Menu extends StatelessWidget{
   final chapters;
@@ -10,7 +11,7 @@ class Menu extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 3,
       child: Scaffold(
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(48),
@@ -20,6 +21,7 @@ class Menu extends StatelessWidget{
               tabs: [
                 Tab(text: S.all),
                 Tab(text: S.tech),
+                Tab(text: S.glossary),
               ]
             ),
           ),
@@ -28,6 +30,7 @@ class Menu extends StatelessWidget{
           children: [
             AllExercises(chapters),
             TechExercises(chapters),
+            Glossary(),
           ]
         )
       )

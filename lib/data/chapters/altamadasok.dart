@@ -32,7 +32,7 @@ Exercise ex89a() => Exercise(
     flow: [
       Student(S.terc_gard),
       Master(S.terc_kotes),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.csel_fej),
       Master(S.e89_1),
       Student(S.e89_2),
@@ -52,7 +52,7 @@ Exercise ex89b() => Exercise(
     flow: [
       Student(S.szekond_gard),
       Master(S.terc_invito),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.csel_fej),
       Master(S.e89_1),
       Student(S.e89_2),
@@ -74,7 +74,7 @@ Exercise ex90a() => Exercise(
     flow: [
       Student(S.szekond_gard),
       Master(S.szekond_kotes),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e90_1),
       Master(S.e90_2),
       Student(S.e90_3),
@@ -93,7 +93,7 @@ Exercise ex90b() => Exercise(
     flow: [
       Student(S.szekond_gard),
       Master(S.szekond_kotes),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e90_1),
       Master(S.e90_2),
       Student(S.e90_3),
@@ -114,7 +114,7 @@ Exercise ex90c() => Exercise(
     flow: [
       Student(S.terc_gard),
       Master(S.szekond_invito),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e90_1),
       Master(S.e90_2),
       Student(S.e90_3),
@@ -134,7 +134,7 @@ Exercise ex91a() => Exercise(
     flow: [
       Student(S.terc_gard),
       Master(S.terc_kotes),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e91_1),
       Master(S.e91_2),
       Student(S.e91_3),
@@ -150,7 +150,7 @@ Exercise ex91b() => Exercise(
     flow: [
       Student(S.terc_gard),
       Master(S.terc_kotes),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e91_1),
       Master(S.e91_4),
       Student(S.e91_5),
@@ -167,7 +167,7 @@ Exercise ex92a() => Exercise(
     flow: [
       Student(S.szekond_gard),
       Master(S.kvart_invito),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e92_1),
       Master(S.e92_2),
       Student(S.e92_3),
@@ -184,7 +184,7 @@ Exercise ex92b() => Exercise(
     flow: [
       Student(S.terc_gard),
       Master(S.kvart_kotes),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e92_1),
       Master(S.e92_2),
       Student(S.e92_3),
@@ -201,7 +201,7 @@ Exercise ex93a() => Exercise(
     flow: [
       Student(S.terc_gard),
       Master(S.terc_kotes),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e93_1),
       Master(S.e93_2),
       Student(S.e93_3),
@@ -219,7 +219,7 @@ Exercise ex93b() => Exercise(
     flow: [
       Student(S.szekond_gard),
       Master(S.terc_invito),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e93_1),
       Master(S.e93_2),
       Student(S.e93_3),
@@ -237,7 +237,7 @@ Exercise ex94a() => Exercise(
     flow: [
       Student(S.terc_gard),
       Master(S.kvint_kotes),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e94_1),
       Master(S.e94_2),
       Student(S.e94_3),
@@ -251,7 +251,7 @@ Exercise ex94b() => Exercise(
     flow: [
       Student(S.terc_invito),
       Master(S.kvint_invito),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e94_1),
       Master(S.e94_4),
       Student(S.e94_5),
@@ -265,7 +265,7 @@ Exercise ex95a() => Exercise(
     flow: [
       Student(S.szekond_gard),
       Master(S.szekond_kotes),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e95_1),
       Master(S.e95_2),
       Student(S.e95_3),
@@ -279,7 +279,7 @@ Exercise ex95b() => Exercise(
     flow: [
       Student(S.terc_gard),
       Master(S.szekond_invito),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e95_1),
       Master(S.e95_2),
       Student(S.e95_3),
@@ -293,7 +293,7 @@ Exercise ex96a() => Exercise(
     flow: [
       Student(S.terc_gard),
       Master(S.kvint_kotes),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e96_1),
       Master(S.e96_2),
       Student(S.e96_3),
@@ -310,7 +310,7 @@ Exercise ex96b() => Exercise(
     flow: [
       Student(S.szekond_gard),
       Master(S.kvint_invito),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e96_1),
       Master(S.e96_2),
       Student(S.e96_3),
@@ -327,7 +327,7 @@ Exercise ex97a() => Exercise(
     flow: [
       Student(S.szekond_gard),
       Master(S.terc_invito),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e97_1),
       Master(S.e97_2),
       Student(S.e97_3),
@@ -344,7 +344,7 @@ Exercise ex97b() => Exercise(
     flow: [
       Student(S.terc_gard),
       Master(S.terc_invito),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e97_4),
       Master(S.e97_5),
       Student(S.e97_3),
@@ -361,7 +361,7 @@ Exercise ex98a() => Exercise(
     flow: [
       Student(S.szekond_gard),
       Master(S.szekond_kotes),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e98_1),
       Master(S.e98_2),
       Student(S.e98_3),
@@ -377,7 +377,7 @@ Exercise ex98b() => Exercise(
     flow: [
       Student(S.terc_gard),
       Master(S.szekond_invito),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e98_1),
       Master(S.e98_2),
       Student(S.e98_3),
@@ -393,7 +393,7 @@ Exercise ex99a() => Exercise(
     flow: [
       Student(S.terc_gard),
       Master(S.kvint_kotes),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e99_1),
       Master(S.e99_2),
       Student(S.e99_3),
@@ -409,7 +409,7 @@ Exercise ex99b() => Exercise(
     flow: [
       Student(S.szekond_gard),
       Master(S.kvint_invito),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e99_1),
       Master(S.e99_2),
       Student(S.e99_3),
@@ -425,7 +425,7 @@ Exercise ex100a() => Exercise(
     flow: [
       Student(S.terc_gard),
       Master(S.kvint_kotes),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e100_1),
       Master(S.e100_2),
       Student(S.e100_3),
@@ -441,7 +441,7 @@ Exercise ex100b() => Exercise(
     flow: [
       Student(S.terc_gard),
       Master(S.kvint_kotes),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e100_1),
       Master(S.e100_4),
       Student(S.e100_5),
@@ -459,7 +459,7 @@ Exercise ex101a() => Exercise(
     flow: [
       Student(S.szekond_gard),
       Master(S.szekond_kotes),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e101_1),
       Master(S.e101_2),
       Student(S.e101_3),
@@ -475,7 +475,7 @@ Exercise ex101b() => Exercise(
     flow: [
       Student(S.terc_gard),
       Master(S.szekond_invito),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e101_1),
       Master(S.e101_4),
       Student(S.e101_5),
@@ -489,7 +489,7 @@ Exercise ex102a() => Exercise(
     flow: [
       Student(S.szekond_gard),
       Master(S.szekond_kotes),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e102_1),
       Master(S.e102_2),
       Student(S.e102_3),
@@ -508,7 +508,7 @@ Exercise ex102b() => Exercise(
     flow: [
       Student(S.terc_gard),
       Master(S.szekond_invito),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e102_1),
       Master(S.e102_2),
       Student(S.e102_3),
@@ -527,7 +527,7 @@ Exercise ex103() => Exercise(
     flow: [
       Student(S.szekond_gard),
       Master(S.szekond_gard),
-      Student(S.altamadas),
+      Student(S.altamadas_next),
       Student(S.e103_1),
       Master(S.e103_2),
       Student(S.e103_3),
