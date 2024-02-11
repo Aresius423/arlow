@@ -38,21 +38,9 @@ Exercise ex4a() => Exercise(
     Student(S.e4_2)
   ],
   keywords: [
-    S.rendes_tavolsag,
-    S.terc_gard,
-    S.terc_kotes,
-    S.terc_invito,
     S.fokvagas,
-    S.belso_fokvagas,
-    S.karvagas,
-    S.belso_karvagas,
-    S.kitores,
     S.kiteres,
-    S.utanvagas,
-    S.fejvagas,
-    S.kulso_karvagas,
     S.szogvagas,
-    S.also_karvagas,
     S.hatra_kitores,
   ]
 );
@@ -67,20 +55,6 @@ Exercise ex4b() => Exercise(
       Student(S.e4_4),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.terc_gard,
-      S.terc_kotes,
-      S.terc_invito,
-      S.mellvagas,
-      S.hasvagas,
-      S.ugras_roham,
-      S.roham,
-      S.hatra_lepes,
-      S.utanvagas,
-      S.kitores,
-      S.karvagas,
-      S.kulso_karvagas,
-      S.also_karvagas,
       S.hatra_kitores
     ]
 );
@@ -96,20 +70,6 @@ Exercise ex4c() => Exercise(
   ],
   noteAfter: S.e4_5,
   keywords: [
-    S.rendes_tavolsag,
-    S.terc_gard,
-    S.terc_kotes,
-    S.terc_invito,
-    S.mellvagas,
-    S.hasvagas,
-    S.ugras_roham,
-    S.roham,
-    S.hatra_lepes,
-    S.utanvagas,
-    S.kitores,
-    S.karvagas,
-    S.kulso_karvagas,
-    S.also_karvagas,
     S.hatra_kitores
   ]
 );
@@ -124,17 +84,9 @@ Exercise ex5a() => Exercise(
     Student(S.e4_7),
   ],
   keywords: [
-    S.rendes_tavolsag,
-    S.terc_gard,
-    S.terc_kotes,
     S.coupe,
-    S.coupe_lendites,
-    S.felso_karvagas,
     S.elovagas,
-    S.karvagas,
-    S.belso_karvagas,
     S.fokvagas,
-    S.belso_fokvagas,
   ]
 );
 
@@ -149,18 +101,9 @@ Exercise ex5b() => Exercise(
     ],
     noteAfter: S.e5_3,
     keywords: [
-      S.rendes_tavolsag,
-      S.terc_gard,
-      S.terc_kotes,
       S.coupe,
-      S.coupe_lendites,
-      S.coupe_fejvagas,
       S.elovagas,
-      S.karvagas,
-      S.belso_karvagas,
       S.fokvagas,
-      S.belso_fokvagas,
-      S.roham,
     ]
 );
 
@@ -174,16 +117,7 @@ Exercise ex6a() => Exercise(
     Student(S.e6_2),
   ],
   keywords: [
-    S.rendes_tavolsag,
-    S.szekond_kotes,
-    S.szekond_gard,
-    S.fejvagas,
-    S.roham,
-    S.hatra_lepes,
     S.elovagas,
-    S.karvagas,
-    S.also_karvagas,
-    S.kulso_karvagas,
     S.szogvagas,
     S.hatra_kitores,
   ]
@@ -200,18 +134,7 @@ Exercise ex6b() => Exercise(
     ],
     noteAfter: S.e6_5,
     keywords: [
-      S.rendes_tavolsag,
-      S.szekond_kotes,
-      S.szekond_gard,
-      S.a_tempo,
-      S.fejvagas,
-      S.roham,
-      S.karvagas,
-      S.kulso_karvagas,
       S.szogvagas,
-      S.oldalvagas,
-      S.mellvagas,
-      S.hasvagas,
     ]
 );
 
@@ -224,16 +147,7 @@ Exercise ex7a() => Exercise(
       Master(S.megall),
       Student(S.e7_1)
     ],
-    keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.szekond_kotes,
-      S.kotes_elorelepessel,
-      S.a_tempo,
-      S.fejvagas,
-      S.oldalvagas,
-      S.hasvagas,
-    ]
+    keywords: [],
 );
 
 Exercise ex7b() => Exercise(
@@ -247,19 +161,7 @@ Exercise ex7b() => Exercise(
       Master(S.ved_es_visszavag),
     ],
     noteAfter: S.e7_3,
-    keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.szekond_kotes,
-      S.kotes_elorelepessel,
-      S.hatra_lepes,
-      S.a_tempo,
-      S.fejvagas,
-      S.oldalvagas,
-      S.hasvagas,
-      S.ugras_roham,
-      S.roham,
-    ]
+    keywords: [],
 );
 
 Exercise ex7ca() => Exercise(
@@ -274,16 +176,7 @@ Exercise ex7ca() => Exercise(
     ],
     noteAfter: S.e7_5,
     keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.szekond_kotes,
-      S.kotes_elorelepessel,
-      S.a_tempo,
-      S.fejvagas,
-      S.oldalvagas,
-      S.hasvagas,
       S.kiteres,
-      S.utanvagas,
       S.ismetelt_kitores,
     ]
 );
@@ -299,14 +192,6 @@ Exercise ex7cb() => Exercise(
     ],
     noteAfter: S.e7_5,
     keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.szekond_kotes,
-      S.kotes_elorelepessel,
-      S.a_tempo,
-      S.fejvagas,
-      S.oldalvagas,
-      S.hasvagas,
       S.elovagas,
     ]
 );
@@ -321,13 +206,6 @@ Exercise ex7d() => Exercise(
       Student(S.igyekszik_vedeni_es_visszavagni),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.szekond_kotes,
-      S.kotes_elorelepessel,
-      S.karvagas,
-      S.felso_karvagas,
-      S.fejvagas,
     ]
 );
 
@@ -340,12 +218,6 @@ Exercise ex7e() => Exercise(
       Master(S.e7_10),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.szekond_kotes,
-      S.kotes_elorelepessel,
-      S.a_tempo,
-      S.oldalvagas,
     ]
 );
 
@@ -359,18 +231,8 @@ Exercise ex8a() => Exercise(
     Student(S.e8_1)
   ],
   keywords: [
-    S.rendes_tavolsag,
-    S.terc_gard,
-    S.terc_kotes,
-    S.kotes_elorelepessel,
-    S.szuras,
-    S.felso_szuras,
     S.kotott_szuras,
-    S.felso_kotott_szuras,
-    S.oldalvagas,
-    S.hasvagas,
     S.coupe,
-    S.coupe_fejvagas,
     S.kitero_szuras,
   ]
 );
@@ -385,16 +247,7 @@ Exercise ex8b() => Exercise(
       Student(S.e8_3)
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.terc_gard,
-      S.terc_kotes,
-      S.kotes_elorelepessel,
-      S.hatra_lepes,
-      S.prim_vedes,
       S.engedo_vedes,
-      S.engedo_prim_vedes,
-      S.roham,
-      S.ugras_roham,
     ]
 );
 
@@ -408,18 +261,8 @@ Exercise ex8c() => Exercise(
       Student(S.e8_5)
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.terc_gard,
-      S.terc_kotes,
-      S.kotes_elorelepessel,
-      S.szuras,
       S.kitero_szuras,
-      S.szekond_vedes,
-      S.mely_kvart_vedes,
-      S.prim_vedes,
-      S.kvint_vedes,
       S.korvedes,
-      S.korterc_vedes,
     ]
 );
 
@@ -433,10 +276,6 @@ Exercise ex8d() => Exercise(
       Student(S.ved_megfeleloen_es_visszavag)
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.terc_gard,
-      S.terc_kotes,
-      S.kotes_elorelepessel,
     ]
 );
 
@@ -449,11 +288,6 @@ Exercise ex8e() => Exercise(
       Master(S.tamad_a_tempo_es_talal),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.terc_gard,
-      S.terc_kotes,
-      S.kotes_elorelepessel,
-      S.a_tempo,
     ]
 );
 
@@ -467,13 +301,6 @@ Exercise ex9a() => Exercise(
       Master(S.e9_1),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.szekond_kotes,
-      S.kvint_invito,
-      S.kotes_elorelepessel,
-      S.fejvagas,
-      S.kvint_vedes,
     ]
 );
 
@@ -488,13 +315,6 @@ Exercise ex9b() => Exercise(
       Student(S.ved_szekonddal_es_visszavag),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.szekond_kotes,
-      S.kvint_invito,
-      S.kotes_elorelepessel,
-      S.oldalvagas,
-      S.szekond_vedes,
     ]
 );
 
@@ -509,16 +329,6 @@ Exercise ex9c() => Exercise(
       Student(S.e9_2),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.szekond_kotes,
-      S.kvint_invito,
-      S.kotes_elorelepessel,
-      S.hatra_lepes,
-      S.roham,
-      S.ugras_roham,
-      S.szuras,
-      S.a_tempo,
     ]
 );
 
@@ -535,14 +345,6 @@ Exercise ex9da() => Exercise(
       Student(S.igyekszik_vedeni_es_visszavagni),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.szekond_kotes,
-      S.kvint_invito,
-      S.kotes_elorelepessel,
-      S.hatra_lepes,
-      S.roham,
-      S.ugras_roham,
     ]
 );
 
@@ -558,16 +360,6 @@ Exercise ex9db() => Exercise(
       Master(S.e9_5),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.szekond_kotes,
-      S.kvint_invito,
-      S.kotes_elorelepessel,
-      S.hatra_lepes,
-      S.roham,
-      S.ugras_roham,
-      S.a_tempo,
-      S.fejvagas,
     ]
 );
 
@@ -582,14 +374,7 @@ Exercise ex10a() => Exercise(
       Student(S.visszavag),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.terc_gard,
-      S.terc_kotes,
-      S.kvart_invito,
-      S.kotes_elorelepessel,
-      S.szuras,
       S.kitero_szuras,
-      S.mellvagas,
     ]
 );
 
@@ -605,12 +390,6 @@ Exercise ex10b() => Exercise(
       Master(S.e10_3),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.terc_gard,
-      S.terc_kotes,
-      S.kvart_invito,
-      S.kotes_elorelepessel,
-      S.a_tempo,
     ]
 );
 
@@ -625,15 +404,6 @@ Exercise ex10c() => Exercise(
       Student(S.e10_5),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.terc_gard,
-      S.terc_kotes,
-      S.kvart_invito,
-      S.kotes_elorelepessel,
-      S.hatra_lepes,
-      S.roham,
-      S.ugras_roham,
-      S.a_tempo,
     ]
 );
 
@@ -647,12 +417,6 @@ Exercise ex10d() => Exercise(
       Master(S.e10_6),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.terc_gard,
-      S.terc_kotes,
-      S.kvart_invito,
-      S.kotes_elorelepessel,
-      S.a_tempo,
     ]
 );
 
@@ -667,11 +431,6 @@ Exercise ex10e() => Exercise(
       Student(S.ved_es_visszavag),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.terc_gard,
-      S.terc_kotes,
-      S.kvart_invito,
-      S.kotes_elorelepessel,
     ]
 );
 
@@ -685,13 +444,6 @@ Exercise ex10f() => Exercise(
       Master(S.e10_8),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.terc_gard,
-      S.terc_kotes,
-      S.kvart_invito,
-      S.kotes_elorelepessel,
-      S.a_tempo,
-      S.hatra_lepes,
     ]
 );
 
@@ -707,10 +459,6 @@ Exercise ex11a() => Exercise(
       Master(S.ved_es_visszavag),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.prim_kotes,
-      S.kotes_elorelepessel,
     ]
 );
 
@@ -725,11 +473,6 @@ Exercise ex11b() => Exercise(
 
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.prim_kotes,
-      S.kotes_elorelepessel,
-      S.a_tempo,
     ]
 );
 
@@ -745,13 +488,6 @@ Exercise ex11c() => Exercise(
       Master(S.igyekszik_vedeni_es_visszavagni),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.prim_kotes,
-      S.kotes_elorelepessel,
-      S.a_tempo,
-      S.roham,
-      S.ugras_roham,
     ]
 );
 
@@ -766,11 +502,6 @@ Exercise ex11d() => Exercise(
       Student(S.igyekszik_vedeni_es_visszavagni),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.prim_kotes,
-      S.kotes_elorelepessel,
-      S.a_tempo,
     ]
 );
 
@@ -785,15 +516,6 @@ Exercise ex12a() => Exercise(
       Student(S.visszavag)
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.szekond_kotes,
-      S.terc_invito,
-      S.kvart_invito,
-      S.kotes_elorelepessel,
-      S.szuras,
-      S.egyenes_szuras,
-      S.kvart_vedes,
     ]
 );
 
@@ -807,14 +529,6 @@ Exercise ex12b() => Exercise(
       Master(S.e12_3),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.szekond_kotes,
-      S.terc_invito,
-      S.kvart_invito,
-      S.kotes_elorelepessel,
-      S.a_tempo,
-      S.hatra_lepes,
     ]
 );
 
@@ -829,20 +543,6 @@ Exercise ex13a() => Exercise(
       Master(S.e13_3),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.terc_gard,
-      S.terc_kotes,
-      S.kvint_kotes,
-      S.kvart_invito,
-      S.kotes_elorelepessel,
-      S.felso_vonal,
-      S.hatra_lepes,
-      S.a_tempo,
-      S.oldalvagas,
-      S.hasvagas,
-      S.karvagas,
-      S.belso_karvagas,
-      S.belso_fokvagas,
       S.fokvagas,
     ]
 );
@@ -858,18 +558,7 @@ Exercise ex13b() => Exercise(
       Student(S.e13_5),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.terc_gard,
-      S.terc_kotes,
-      S.kvint_kotes,
-      S.kvart_invito,
-      S.kotes_elorelepessel,
-      S.hatra_lepes,
-      S.kulso_vagas,
-      S.terc_vedes,
-      S.elore_lepes,
       S.coupe,
-      S.coupe_fejvagas,
     ]
 );
 
@@ -884,19 +573,7 @@ Exercise ex13c() => Exercise(
       Student(S.e13_7),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.terc_gard,
-      S.terc_kotes,
-      S.kvint_kotes,
-      S.kvart_invito,
-      S.kotes_elorelepessel,
-      S.hasvagas,
-      S.hatra_lepes,
-      S.mely_kvart_vedes,
-      S.elore_lepes,
       S.coupe,
-      S.coupe_fejvagas,
-      S.mellvagas,
     ]
 );
 
@@ -911,23 +588,6 @@ Exercise ex14a() => Exercise(
       Student(S.e14_3),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.terc_gard,
-      S.szekond_invito,
-      S.kvart_kotes,
-      S.hatra_lepes,
-      S.roham,
-      S.ugras_roham,
-      S.fejvagas,
-      S.a_tempo,
-      S.hasvagas,
-      S.szekond_gard,
-      S.hatra_lepes,
-      S.kvint_vedes,
-      S.mely_kvart_vedes,
-      S.elore_lepes,
-      S.prim_kotes,
-      S.kitores,
     ]
 );
 
@@ -942,25 +602,8 @@ Exercise ex14b() => Exercise(
       Student(S.e14_5)
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.terc_gard,
-      S.szekond_invito,
-      S.kvart_kotes,
-      S.hatra_lepes,
-      S.a_tempo,
-      S.karvagas,
-      S.kulso_karvagas,
       S.szogvagas,
-      S.hatra_kitores,
-      S.magas_terc,
-      S.terc_vedes,
-      S.mely_terc_vedes,
-      S.belso_karvagas,
-      S.belso_fokvagas,
       S.fokvagas,
-      S.elore_lepes,
-      S.kvint_kotes,
-      S.kitores,
     ]
 );
 
@@ -977,22 +620,6 @@ Exercise ex15a() => Exercise(
       Student(S.ismetli_a_tamadast),
     ],
     keywords: [
-      S.szekond_gard,
-      S.kotes_elorelepessel,
-      S.terc_kotes,
-      S.hatra_lepes,
-      S.also_vonal,
-      S.roham,
-      S.ugras_roham,
-      S.prim_kotes,
-      S.szuras,
-      S.egyenes_szuras,
-      S.also_egyenes_szuras,
-      S.fejvagas,
-      S.lenditett_fejvagas,
-      S.a_tempo,
-      S.oldalvagas,
-      S.hasvagas,
       S.ismetelt_tamadas,
     ],
 );
@@ -1008,18 +635,7 @@ Exercise ex15b() => Exercise(
       Student(S.e15_5),
     ],
     keywords: [
-      S.szekond_gard,
-      S.kotes_elorelepessel,
-      S.terc_kotes,
-      S.szuras,
-      S.also_szuras,
-      S.karvagas,
-      S.also_karvagas,
-      S.also_fokvagas,
       S.fokvagas,
-      S.hatra_kitores,
-      S.elore_lepes,
-      S.prim_kotes,
     ],
 );
 
@@ -1034,12 +650,6 @@ Exercise ex16a() => Exercise(
       Student(S.e16_2),
     ],
     keywords: [
-      S.szekond_gard,
-      S.kotes_elorelepessel,
-      S.szekond_kotes,
-      S.elore_lepes,
-      S.prim_kotes,
-      S.hatra_lepes,
     ],
 );
 
@@ -1054,14 +664,7 @@ Exercise ex16b() => Exercise(
       Student(S.e16_3),
     ],
     keywords: [
-      S.szekond_gard,
-      S.kotes_elorelepessel,
-      S.szekond_kotes,
-      S.elore_lepes,
-      S.prim_kotes,
       S.kiteres,
-      S.a_tempo,
-      S.szuras,
     ],
 );
 
@@ -1076,18 +679,7 @@ Exercise ex17() => Exercise(
       Student(S.megall_vagy_hatra_lep),
     ],
     keywords: [
-      S.szekond_gard,
-      S.terc_gard,
-      S.kotes_elorelepessel,
-      S.prim_kotes,
-      S.kiteres,
-      S.szekond_kotes,
-      S.szuras,
-      S.felso_szuras,
       S.kitero_szuras,
-      S.felso_kitero_szuras,
-      S.arcvagas,
-      S.kulso_arcvagas,
     ],
 );
 
@@ -1102,14 +694,6 @@ Exercise ex18a() => Exercise(
       Student(S.e18_3),
     ],
     keywords: [
-      S.terc_gard,
-      S.elore_lepes,
-      S.also_vonal,
-      S.szekond_kotes,
-      S.a_tempo,
-      S.szuras,
-      S.felso_szuras,
-      S.fejvagas,
     ],
 );
 
@@ -1126,11 +710,6 @@ Exercise ex18b() => Exercise(
       Student(S.e18_7),
     ],
     keywords: [
-      S.terc_gard,
-      S.elore_lepes,
-      S.also_vonal,
-      S.roham,
-      S.ugras_roham,
       S.ismetelt_roham,
       S.ismetelt_tamadas,
     ],
@@ -1149,18 +728,10 @@ Exercise ex19() => Exercise(
       Student(S.e19_5),
     ],
     keywords: [
-      S.rendes_tavolsag,
-      S.szekond_gard,
-      S.felso_vonal,
-      S.elore_lepes,
-      S.hatra_lepes,
-      S.kvart_kotes,
-      S.roham,
-      S.ugras_roham,
       S.elovagas,
-      S.hatra_ugras,
       S.ismetelt_tamadas,
       S.ismetelt_roham,
+      S.hatra_ugras,
     ]
 );
 
