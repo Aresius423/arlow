@@ -1,8 +1,8 @@
-import 'package:arlow/styles.dart';
 import 'package:flutter/material.dart';
 
-import 'exercisePage.dart';
-import 'objects.dart';
+import 'package:arlow/exercisePage.dart';
+import 'package:arlow/objects.dart';
+import 'package:arlow/styles.dart';
 
 class AllExercises extends StatelessWidget {
   final chapters;

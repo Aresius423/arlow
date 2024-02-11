@@ -1,5 +1,3 @@
-import 'package:flutter/foundation.dart';
-
 class Chapter {
   String title;
   List<Exercise> exercises;

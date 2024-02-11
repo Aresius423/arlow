@@ -1,18 +1,16 @@
-import 'package:arlow/languageSettings.dart';
-import 'package:arlow/menu.dart';
-import 'package:arlow/styles.dart';
 import 'package:flutter/material.dart';
+
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
+import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'data.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:intl/intl.dart';
-
-import 'objects.dart';
-
-var locale = 'hu';
+import 'package:arlow/data/data.dart';
+import 'package:arlow/languageSettings.dart';
+import 'package:arlow/menu.dart';
+import 'package:arlow/objects.dart';
+import 'package:arlow/styles.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

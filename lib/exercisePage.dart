@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:arlow/languageSettings.dart';
 
-import 'objects.dart';
-import 'styles.dart';
+import 'package:arlow/languageSettings.dart';
+import 'package:arlow/objects.dart';
+import 'package:arlow/styles.dart';
 
 class ExercisePage extends StatelessWidget {
   final Exercise exercise;

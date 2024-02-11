@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:arlow/languageSettings.dart';
 
-import 'exercisePicker.dart';
+import 'package:arlow/languageSettings.dart';
+import 'package:arlow/exercisePicker.dart';
 
 class Menu extends StatelessWidget{
   final chapters;
