@@ -9,7 +9,24 @@ abstract class Colours {
   static const studentColor = Color(0xFFD6C243);
 }
 
-final ThemeData td = ThemeData(
+final ColorScheme colorScheme = ColorScheme.fromSeed(
+  brightness: Brightness.light,
+  seedColor: Colours.primaryColour,
+  primary: Colours.primaryColour,
+  background: Colours.primaryColorLight,
+  secondary: Colours.accentColor,
+);
+
+final ThemeData mainThemeData = ThemeData(
+  tabBarTheme: TabBarTheme(
+    labelColor: Colors.white,
+    unselectedLabelColor: Colors.white70,
+  ),
+  appBarTheme: AppBarTheme(
+    color: Colours.primaryColour,
+    elevation: 5,
+  ),
+  colorScheme: colorScheme,
   primaryColor: Colours.primaryColour,
   primaryColorDark: Colours.primaryColorDark,
   primaryColorLight: Colours.primaryColorLight,
@@ -18,11 +35,3 @@ final ThemeData td = ThemeData(
   dividerColor: Colors.transparent,
   canvasColor: Colours.primaryColorLight,
 );
-
-final ThemeData mainThemeData = td.copyWith(
-  colorScheme: td.colorScheme.copyWith(
-    background: Colours.primaryColorLight,
-    secondary: Colours.accentColor,
-  ),
-);
-
